@@ -83,5 +83,3 @@ gulp.task('serve', function() {
 
 
 gulp.task('default', ['img', 'entryFiles', 'styles', 'scripts', 'serve', 'watcher']);
-
-
