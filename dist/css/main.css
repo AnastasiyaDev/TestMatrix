@@ -231,16 +231,17 @@ h5 {
   height: auto !important;
   margin: 0px auto -90px;
   min-height: 100%;
-  padding: 0px 0px 90px;
+  padding: 0px 0px 200px;
 }
 .breadcrumb {
   color: #2A2A2A;
   font-size: 12px;
   font-family: "Helveticaneuecyr-light";
   text-transform: uppercase;
+  margin: 20px 0px 0px 50px;
 }
 .breadcrumb__link:after {
-  content: " /";
+  content: " / ";
 }
 .breadcrumb__active {
   color: #CD1D2C;
@@ -258,8 +259,21 @@ h5 {
   letter-spacing: -1px;
   margin-bottom: 0px;
 }
+.steps-videos__header,
+.education-videos__header,
+.inspiration-videos__header {
+  margin-top: 60px;
+}
+.front-video {
+  width: 100%;
+}
 .front-video__header {
   font-size: 61px;
+}
+.front-video__img {
+  height: 500px;
+  background: url("http://img.youtube.com/vi/-tztXOz8Vc0/maxresdefault.jpg") no-repeat 0 0;
+  background-size: cover;
 }
 .front-video__description {
   font-size: 30px;
