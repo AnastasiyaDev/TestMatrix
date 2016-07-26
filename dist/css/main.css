@@ -33,23 +33,23 @@
 }
 .matr-custom-facebook:before {
   content: "\e902";
-  color: #fff;
+  color: #737373;
 }
 .matr-custom-twitter:before {
   content: "\e905";
-  color: #fff;
+  color: #737373;
 }
 .matr-custom-pinterest:before {
   content: "\e904";
-  color: #fff;
+  color: #737373;
 }
 .matr-custom-youtube:before {
   content: "\e906";
-  color: #fff;
+  color: #737373;
 }
 .matr-custom-instagram:before {
   content: "\e903";
-  color: #fff;
+  color: #737373;
 }
 .matr-navicon:before {
   content: "\f0c9";
@@ -294,6 +294,9 @@ h5 {
   background: #2A2A2A;
   text-transform: uppercase;
 }
+.footer a:hover {
+  color: #959595;
+}
 .footer-menu {
   margin: 10px 40px 0px;
   width: 300px;
@@ -306,9 +309,6 @@ h5 {
   color: #737373;
   line-height: 2;
 }
-.footer-menu__link:hover {
-  color: #959595;
-}
 .footer-menu__link,
 .footer-location__item {
   font-family: "Helveticaneuecyr-medium";
@@ -316,7 +316,7 @@ h5 {
 }
 .footer-location {
   float: right;
-  margin: 20px 40px 0px;
+  margin: 15px 40px 0px;
   color: #b7b7b7;
   letter-spacing: 1px;
 }
