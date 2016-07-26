@@ -52,6 +52,10 @@
   content: "\e903";
   color: #fff;
 }
+.matr-navicon:before {
+  content: "\f0c9";
+  color: #fff;
+}
 @font-face {
   font-family: 'Helveticaneuecyr-black';
   src: url('../HelveticaNeue_rus/helveticaneuecyr-black.eot');
@@ -158,6 +162,14 @@ a {
   margin: 0px;
   padding: 0px;
 }
+.color-red {
+  color: #CD1D2C;
+}
+h1,
+h2,
+h5 {
+  text-transform: uppercase;
+}
 .header {
   color: #fff;
   min-height: 90px;
@@ -221,7 +233,50 @@ a {
   min-height: 100%;
   padding: 0px 0px 90px;
 }
+.breadcrumb {
+  color: #2A2A2A;
+  font-size: 12px;
+  font-family: "Helveticaneuecyr-light";
+  text-transform: uppercase;
+}
+.breadcrumb__link:after {
+  content: " /";
+}
+.breadcrumb__active {
+  color: #CD1D2C;
+  font-family: "Helveticaneuecyr-roman";
+}
+.common-container {
+  max-width: 980px;
+}
+.front-video__header,
+.steps-videos__header,
+.education-videos__header,
+.inspiration-videos__header {
+  font-family: "Helveticaneuecyr-medium";
+  font-size: 42px;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+}
+.front-video__header {
+  font-size: 61px;
+}
+.front-video__description {
+  font-size: 30px;
+  line-height: 31px;
+  color: #3d3d3d;
+  font-family: "Helveticaneuecyr-bold";
+  letter-spacing: -2px;
+}
+.front-video__description:after {
+  background: #686868;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 40px 0px;
+}
 .footer {
   height: 90px;
-  background: #CD1D2C;
+  background: #2A2A2A;
+  color: #fff;
 }
