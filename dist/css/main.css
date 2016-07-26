@@ -30,6 +30,8 @@
 }
 .matr-play-circle:before {
   content: "\f144";
+  font-size: 150px;
+  opacity: 0.7;
 }
 .matr-custom-facebook:before {
   content: "\e902";
@@ -265,14 +267,19 @@ h5 {
 }
 .front-video {
   width: 100%;
+  position: relative;
 }
 .front-video__header {
   font-size: 61px;
 }
 .front-video__img {
+  cursor: pointer;
   height: 500px;
   background: url("http://img.youtube.com/vi/-tztXOz8Vc0/maxresdefault.jpg") no-repeat 0 0;
   background-size: cover;
+}
+.front-video__img:hover .play-video {
+  opacity: 0.8;
 }
 .front-video__description {
   font-size: 30px;
@@ -287,6 +294,12 @@ h5 {
   display: block;
   height: 2px;
   margin: 40px 0px;
+}
+.play-video {
+  box-sizing: border-box;
+  position: absolute;
+  left: 42%;
+  top: 32%;
 }
 .footer {
   height: 60px;
@@ -331,7 +344,7 @@ h5 {
   left: 45%;
   position: absolute;
   text-align: center;
-  top: 40%;
+  top: 50%;
   box-sizing: border-box;
 }
 .footer-social__item {

@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title>Matrix.com</title>
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> -->
+	<link rel="stylesheet" media="(max-width: 1040px)" href="public/css/tablet.css">
+<!-- 	<link rel="stylesheet" media="(max-width: 767px)" href="public/css/tablet-mini.css">
+	<link rel="stylesheet" media="(max-width: 480px)" href="public/css/mobile.css"> -->
     <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
 </head>
 <body>
 	<div class="header">
@@ -53,13 +56,17 @@
 
   			<div class="front-video">
 	  			<h1 class="front-video__header">Videos</h1>
-	  			<div class="front-video__img"></div>
+	  			<a class="youtube-link" href="https://www.youtube.com/watch?v=-tztXOz8Vc0?autoplay=1">
+		  			<div class="front-video__img">
+		  				<div class="play-video matr-play-circle"></div>
+		  			</div>
+		  		</a>
 	  			<p class="front-video__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis, nisl at ullamcorper egestas, felisadi piscing dolor, a interdum lorem urna quis magna.</p>
 	  		</div>
 
 	  		<div class="steps-videos">
 	  			<h2 class="steps-videos__header">step <span class="color-red">by</span> step</h2>
-	  			<div class="steps-videos__slider">
+	  			<div class="steps-videos__slider slider">
 	  				<div>
 		  				<img src="http://img.youtube.com/vi/z8M0Fa1JVco/mqdefault.jpg" alt="">
 		  			</div>
@@ -83,7 +90,7 @@
 
 	  		<div class="education-videos">
 	  			<h2 class="education-videos__header">craft <span class="color-red">education</span></h2>
-	  			<div class="education-videos__slider">
+	  			<div class="education-videos__slider slider">
 	  				<div>
 		  				<img src="http://img.youtube.com/vi/RmNWNLXmswk/mqdefault.jpg" alt="">
 		  			</div>
@@ -98,7 +105,7 @@
 
 	  		<div class="inspiration-videos">
 	  			<h2 class="inspiration-videos__header">inspiration</h2>
-	  			<div class="inspiration-videos__slider">
+	  			<div class="inspiration-videos__slider slider">
 	  				<div>
 		  				<img src="http://img.youtube.com/vi/VmmwwzR536g/mqdefault.jpg" alt="">
 		  			</div>
@@ -143,6 +150,9 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+	<script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
