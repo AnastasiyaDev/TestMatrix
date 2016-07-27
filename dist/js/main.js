@@ -64,9 +64,9 @@ $(document).ready(function(){
 	);
 
 	$("#more-steps").click(function(){
-	    $(document).find(".img-block:not(:visible):lt(2)").slideToggle('fast',
+	    $('.steps-videos__mob').find(".img-block:not(:visible):lt(2)").slideToggle('fast',
 	        function() {
-	            if ($(document).find(".img-block:not(:visible)").length==0) {
+	            if ($('.steps-videos__mob').find(".img-block:not(:visible)").length==0) {
 	                $("#more-steps").css("display","none");
 	            }
 	        }

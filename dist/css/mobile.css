@@ -50,7 +50,8 @@
   .front-video__img {
     cursor: pointer;
     height: 175px;
-    background: url("http://img.youtube.com/vi/-tztXOz8Vc0/mqdefault.jpg") no-repeat 0 0;
+    background: url("http://img.youtube.com/vi/-tztXOz8Vc0/mqdefault.jpg") no-repeat 50% 50%;
+    background-size: 100%;
   }
   .front-video__description {
     font-size: 20px;
@@ -61,8 +62,13 @@
     margin: 20px 0px;
   }
   .play-video {
-    left: 35%;
+    left: 40%;
     top: 22%;
+  }
+  .steps-videos,
+  .education-videos,
+  .inspiration-videos {
+    width: 100%;
   }
   .front-video__header,
   .steps-videos__header,
@@ -110,6 +116,10 @@
     border: 0px;
     padding: 10px;
     letter-spacing: -1px;
+    font-weight: 400;
+  }
+  .load-more:hover {
+    background: #3A3A3A;
   }
   .footer {
     display: -ms-flexbox;
