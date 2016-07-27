@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
   $('.slider').slick({
 	  dots: false,
 	  infinite: true,
@@ -17,7 +18,7 @@ $(document).ready(function(){
 	      }
 	    },
 	    {
-	      breakpoint: 600,
+	      breakpoint: 601,
 	      settings: {
 	        slidesToShow: 1,
 	        slidesToScroll: 1,
@@ -29,51 +30,47 @@ $(document).ready(function(){
 	  ]
   });
 
-// helpers : {
-// 			media : {
-// 			    youtube : {
-// 			         params : {
-// 			             theme : 'light',
-//                          vq    : 'hd720',
-//                          css   : {
-//                             'body' : 'color: #fff'
-//                          } 
-// 			         }
-// 			    } 
-// 			}
-// 		}
+  	$(".youtube-link").on( 'click', function(event) {
+	  	event.stopPropagation();
+		$.fancybox({
+				'padding'		: 0,
+				'autoScale'		: true,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none',
+				'title'			: this.title,
+				'maxWidth'      : '1000',
+	      		'maxHeight'     : '700',
+	      		'width'         : '80%',
+	      		'height'        : '50%',
+				'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+				'type'			: 'swf',
+				'swf'			: {
+				   	 'wmode'		: 'transparent',
+					'allowfullscreen'	: 'true'
+				}
 
-  $(".youtube-link").click(function() {
-	$.fancybox({
-			'padding'		: 0,
-			'autoScale'		: true,
-			'transitionIn'	: 'none',
-			'transitionOut'	: 'none',
-			'title'			: this.title,
-			'maxWidth'      : '1000',
-      		'maxHeight'     : '700',
-      		'width'         : '70%',
-      		'height'        : '50%',
-			'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
-			'type'			: 'swf',
-			'swf'			: {
-			   	 'wmode'		: 'transparent',
-				'allowfullscreen'	: 'true'
-			}
+			});
 
-		});
-
-	return false;
-});
+		return false;
+	});
 
 	$(".img-block").hover(
 	  function() {
 	    $(this).find($('.play-circle')).attr( "src", "img/playCircle-active.png");
-	    // alert("fff");
 	  }, function() {
     	 $(this).find($('.play-circle')).attr( "src", "img/playCircle.png");
   		}
 
 	);
+
+	$("#more-steps").click(function(){
+	    $(document).find(".img-block:not(:visible):lt(2)").slideToggle('fast',
+	        function() {
+	            if ($(document).find(".img-block:not(:visible)").length==0) {
+	                $("#more-steps").css("display","none");
+	            }
+	        }
+	    );
+	})
  
 });

@@ -61,6 +61,10 @@ var $stepsSlider = $('.steps-videos__slider');
 var $educationSlider = $('.education-videos__slider');
 var $inspirationSlider = $('.inspiration-videos__slider');
 
+var $stepsMob = $('.steps-videos__mob');
+var $educationMob = $('.education-videos__mob');
+var $inspirationMob = $('.inspiration-videos__mob');
+
 videolist.forEach(function(item) {
       switch(item.type){
         case 'steps': {
@@ -78,6 +82,19 @@ videolist.forEach(function(item) {
       }
   });
 
-$stepsSlider.html(tmpl({ videos: steps }));
-$educationSlider.html(tmpl({ videos: education }));
-$inspirationSlider.html(tmpl({ videos: inspiration }));
+// function windowSize(){
+    // if ($(window).width() >= '601'){
+        $stepsSlider.html(tmpl({ videos: steps }));
+        $educationSlider.html(tmpl({ videos: education }));
+        $inspirationSlider.html(tmpl({ videos: inspiration }));
+    // } else {
+        $stepsMob.html(tmpl({ videos: steps }));
+        $stepsMob.append("<button id='more-steps' class='load-more'>Load more</button>");
+        $educationMob.html(tmpl({ videos: education }));
+        $educationMob.append("<button id='more-education' class='load-more'>Load more</button>");        
+        $inspirationMob.html(tmpl({ videos: inspiration }));
+        $inspirationMob.append("<button id='more-inspiration' class='load-more'>Load more</button>");              
+//     }
+// }
+
+// $(window).on('load resize',windowSize);

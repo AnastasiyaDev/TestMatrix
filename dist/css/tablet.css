@@ -5,9 +5,6 @@
   .common-container {
     max-width: 700px;
   }
-  .front-video__header {
-    font-size: 55px;
-  }
   .front-video__img {
     height: 400px;
   }
@@ -35,7 +32,7 @@
     max-width: 560px;
   }
   .front-video__header {
-    font-size: 50px;
+    font-size: 56px;
   }
   .front-video__img {
     height: 300px;
