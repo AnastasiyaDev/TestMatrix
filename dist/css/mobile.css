@@ -2,11 +2,18 @@
   .matr-custom-logo:before {
     font-size: 16px;
   }
-  .common-container {
-    max-width: 600px;
+  .matr-custom-search:before {
+    font-size: 25px;
   }
-  .top-panel {
-    background-color: blue;
+  .matr-play-circle:before {
+    font-size: 100px;
+  }
+  .common-container {
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: 0px 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .top-panel__left {
     display: none;
@@ -21,7 +28,79 @@
   .header-menu__list {
     display: none;
   }
+  .mob-panel {
+    display: block;
+    background-color: transparent;
+  }
+  .mob-panel__left {
+    margin: 15px;
+    font-size: 15px;
+    text-align: left;
+  }
+  .mob-panel__search {
+    padding: 15px;
+  }
+  .breadcrumb {
+    font-size: 13px;
+    margin: 20px 0px 0px 10px;
+  }
+  .front-video {
+    width: auto;
+  }
+  .front-video__header {
+    font-size: 40px;
+  }
+  .front-video__img {
+    cursor: pointer;
+    height: 175px;
+    background: url("http://img.youtube.com/vi/-tztXOz8Vc0/mqdefault.jpg") no-repeat 0 0;
+  }
+  .front-video__description {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -1px;
+  }
+  .front-video__description:after {
+    margin: 20px 0px;
+  }
+  .play-video {
+    left: 42%;
+    top: 32%;
+  }
   .footer {
-    background-color: blue;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    height: 300px;
+  }
+  .footer-social {
+    text-align: left;
+    position: static;
+    -ms-flex-order: 0;
+        order: 0;
+    margin: 25px 10px;
+  }
+  .footer-location {
+    margin: 0px 20px;
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .footer-location__item {
+    text-align: left;
+  }
+  .footer-menu {
+    width: auto;
+    margin-top: 25px;
+    -ms-flex-order: 3;
+        order: 3;
+  }
+  .footer-menu__link,
+  .footer-location__item {
+    font-size: 11px;
   }
 }

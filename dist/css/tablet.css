@@ -1,10 +1,5 @@
 @media screen and (max-width: 1040px) {
-  .top-panel,
-  .footer {
-    background-color: green;
-  }
-  .top-panel__left,
-  .footer__left {
+  .top-panel__left {
     font-size: 12px;
   }
   .common-container {
@@ -36,10 +31,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .top-panel,
-  .footer {
-    background-color: yellow;
-  }
   .common-container {
     max-width: 560px;
   }

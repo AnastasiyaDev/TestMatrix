@@ -175,38 +175,49 @@ h2 {
   color: #fff;
   min-height: 90px;
 }
-.top-panel {
+.mob-panel {
+  display: none;
+}
+.top-panel,
+.mob-panel {
   background-color: #CD1D2C;
 }
-.top-panel__left {
+.top-panel__left,
+.mob-panel__left {
   font-size: 11px;
   margin: 15px;
   margin-left: 30px;
   float: left;
 }
-.top-panel__left h5 {
+.top-panel__left h5,
+.mob-panel__left h5 {
+  cursor: pointer;
   font-family: "Helveticaneuecyr-cond";
   font-weight: 600;
   letter-spacing: 0px;
   padding-bottom: 2px;
   text-transform: uppercase;
 }
-.top-panel__left p {
+.top-panel__left p,
+.mob-panel__left p {
   font-family: "Helveticaneuecyr-light";
 }
-.top-panel__logo {
+.top-panel__logo,
+.mob-panel__logo {
   text-align: center;
   display: block;
   padding: 20px 20px 15px 20px;
 }
-.top-panel__search {
+.top-panel__search,
+.mob-panel__search {
   cursor: pointer;
   float: right;
   padding-right: 35px;
   padding-top: 20px;
   font-weight: 600;
 }
-.top-panel__mob {
+.top-panel__mob,
+.mob-panel__mob {
   display: none;
   float: left;
 }
@@ -249,12 +260,51 @@ h2 {
 .breadcrumb__link:after {
   content: " / ";
 }
+.breadcrumb__link:after:hover {
+  color: #959595;
+}
 .breadcrumb__active {
   color: #CD1D2C;
   font-family: "Helveticaneuecyr-roman";
 }
 .common-container {
   max-width: 980px;
+}
+.front-video {
+  width: 100%;
+  position: relative;
+}
+.front-video__header {
+  font-size: 61px;
+}
+.front-video__img {
+  cursor: pointer;
+  height: 500px;
+  background: url("http://img.youtube.com/vi/-tztXOz8Vc0/maxresdefault.jpg") no-repeat 0 0;
+  background-size: cover;
+}
+.front-video__img:hover .play-video {
+  opacity: 0.8;
+}
+.front-video__description {
+  font-size: 30px;
+  line-height: 31px;
+  color: #3d3d3d;
+  font-family: "Helveticaneuecyr-bold";
+  letter-spacing: -2px;
+}
+.front-video__description:after {
+  background: #686868;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 40px 0px;
+}
+.play-video {
+  box-sizing: border-box;
+  position: absolute;
+  left: 42%;
+  top: 32%;
 }
 .steps-videos__slider .img-block,
 .education-videos__slider .img-block,
@@ -290,45 +340,9 @@ h2 {
 .inspiration-videos__header {
   margin-top: 60px;
 }
-.front-video {
-  width: 100%;
-  position: relative;
-}
-.front-video__header {
-  font-size: 61px;
-}
-.front-video__img {
-  cursor: pointer;
-  height: 500px;
-  background: url("http://img.youtube.com/vi/-tztXOz8Vc0/maxresdefault.jpg") no-repeat 0 0;
-  background-size: cover;
-}
-.front-video__img:hover .play-video {
-  opacity: 0.8;
-}
-.front-video__description {
-  font-size: 30px;
-  line-height: 31px;
-  color: #3d3d3d;
-  font-family: "Helveticaneuecyr-bold";
-  letter-spacing: -2px;
-}
-.front-video__description:after {
-  background: #686868;
-  content: "";
-  display: block;
-  height: 2px;
-  margin: 40px 0px;
-}
 .youtube-link {
   display: block;
   position: relative;
-}
-.play-video {
-  box-sizing: border-box;
-  position: absolute;
-  left: 42%;
-  top: 32%;
 }
 .footer {
   height: 60px;

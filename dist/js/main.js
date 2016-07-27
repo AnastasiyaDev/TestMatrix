@@ -15,7 +15,17 @@ $(document).ready(function(){
 	        infinite: true,
 	        dots: false
 	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        infinite: true,
+	        dots: false
+	      }
 	    }
+
 	  ]
   });
 
@@ -40,8 +50,8 @@ $(document).ready(function(){
 			'transitionIn'	: 'none',
 			'transitionOut'	: 'none',
 			'title'			: this.title,
-			'maxWidth'      : '800',
-      		'maxHeight'     : '500',
+			'maxWidth'      : '1000',
+      		'maxHeight'     : '700',
       		'width'         : '70%',
       		'height'        : '50%',
 			'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
@@ -56,5 +66,14 @@ $(document).ready(function(){
 	return false;
 });
 
+	$(".img-block").hover(
+	  function() {
+	    $(this).find($('.play-circle')).attr( "src", "img/playCircle-active.png");
+	    // alert("fff");
+	  }, function() {
+    	 $(this).find($('.play-circle')).attr( "src", "img/playCircle.png");
+  		}
+
+	);
  
 });

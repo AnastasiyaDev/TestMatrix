@@ -33,6 +33,16 @@
 		<!-- .top-panel -->
 
 		<div class="header-menu">
+
+			<div class="mob-panel clearfix">
+				<div class="mob-panel__left">
+					<h5 class="matr-chevron-down mar-pad-0">nearest salon  </h5>
+					<p class="mar-pad-0">Plush salon 92101</p>
+				</div>
+
+				<div class="mob-panel__search matr-custom-search"></div>
+			</div>
+
 			<ul class="header-menu__list unstyle list-inline">
 				<li class="header-menu__item"><a class="header-menu__link" href="">Haircare</a></li>
 				<li class="header-menu__item"><a class="header-menu__link" href="">Color</a></li>
@@ -88,6 +98,7 @@
 	  			<div class="img-block">
 	  				<a class="youtube-link" href="https://www.youtube.com/watch?v=<%= video.id %>?autoplay=1">
 		  				<img src="http://img.youtube.com/vi/<%= video.id %>/mqdefault.jpg" alt="">
+		  				<!-- <div class="play-circle"></div> -->
 		  				<img class="play-circle" src="img/playCircle.png">
 		  			</a>
 		  		</div>
@@ -95,12 +106,16 @@
 
 		</script>
 
+		<script type="text/javascript">
+			
+		</script>
+
   		</div>
   		<!-- .common-container -->
 	</div>
 	<!-- .content -->
 
-	<div class="footer">
+	<div class="footer clearfix">
 		<ul class="footer-menu unstyle list-inline">
 			<li class="footer-menu__item"><a class="footer-menu__link" href="">Privacy Policy</a></li>
 			<li class="footer-menu__item"><a class="footer-menu__link" href="">Terms of use</a></li>
@@ -109,18 +124,19 @@
 			<li class="footer-menu__item"><a class="footer-menu__link" href="">Sitemap</a></li>
 		</ul>
 
-		<ul class="footer-location unstyle">
-			<li class="footer-location__item">Location: <b>United States</b></li>
-			<li class="footer-location__item">Language: <b>English</b></li>
-		</ul>
-
-		<ul class="footer-social unstyle list-inline clearfix">
+<ul class="footer-social unstyle list-inline clearfix">
 			<li class="footer-social__item"><a class="footer-social__link matr-custom-facebook" href=""></a></li>
 			<li class="footer-social__item"><a class="footer-social__link matr-custom-twitter" href=""></a></li>
 			<li class="footer-social__item"><a class="footer-social__link matr-custom-pinterest" href=""></a></li>
 			<li class="footer-social__item"><a class="footer-social__link matr-custom-youtube" href=""></a></li>
 			<li class="footer-social__item"><a class="footer-social__link matr-custom-instagram" href=""></a></li>
 		</ul>
+		<ul class="footer-location unstyle">
+			<li class="footer-location__item">Location: <b>United States</b></li>
+			<li class="footer-location__item">Language: <b>English</b></li>
+		</ul>
+
+		
 		
 	</div>
 	<!-- .footer -->
