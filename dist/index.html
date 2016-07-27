@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta viewport="width=device-width">
     <title>Matrix.com</title>
     <link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" media="(max-width: 1040px)" href="public/css/tablet.css">
-<!-- 	<link rel="stylesheet" media="(max-width: 767px)" href="public/css/tablet-mini.css">
-	<link rel="stylesheet" media="(max-width: 480px)" href="public/css/mobile.css"> -->
+	<link rel="stylesheet" media="(max-width: 1040px)" href="css/tablet.css">
+	<link rel="stylesheet" media="(max-width: 600px)" href="css/mobile.css">
+	<!-- <link rel="stylesheet" media="(max-width: 480px)" href="public/css/mobile.css"> -->
     <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
@@ -20,6 +21,8 @@
 			</div>
 
 			<div class="top-panel__search matr-custom-search"></div>
+
+			<div id="mob-menu" class="top-panel__mob matr-navicon"></div>
 
 			<div class="top-panel__logo">
 				<a href=””>
@@ -82,9 +85,11 @@
 	  	<script type="text/template" id="list-template">
 
 		<% _(videos).forEach(function(video) { %>
-	  			<div>
+	  			<div class="img-block">
 	  				<a class="youtube-link" href="https://www.youtube.com/watch?v=<%= video.id %>?autoplay=1">
-		  			<img src="http://img.youtube.com/vi/<%= video.id %>/mqdefault.jpg" alt=""></a>
+		  				<img src="http://img.youtube.com/vi/<%= video.id %>/mqdefault.jpg" alt="">
+		  				<img class="play-circle" src="img/playCircle.png">
+		  			</a>
 		  		</div>
 		<% }); %>
 
@@ -118,6 +123,7 @@
 		</ul>
 		
 	</div>
+	<!-- .footer -->
 
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

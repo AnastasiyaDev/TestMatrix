@@ -55,6 +55,7 @@
 }
 .matr-navicon:before {
   content: "\f0c9";
+  font-size: 30px;
   color: #fff;
 }
 @font-face {
@@ -129,7 +130,7 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  min-width: 330px;
+  min-width: 355px;
   max-width: 100%;
   height: 100%;
   font-size: 16px;
@@ -167,8 +168,7 @@ a {
   color: #CD1D2C;
 }
 h1,
-h2,
-h5 {
+h2 {
   text-transform: uppercase;
 }
 .header {
@@ -179,15 +179,15 @@ h5 {
   background-color: #CD1D2C;
 }
 .top-panel__left {
-  font-size: 12px;
+  font-size: 11px;
   margin: 15px;
   margin-left: 30px;
   float: left;
 }
 .top-panel__left h5 {
-  font-family: "Helveticaneuecyr-medium";
+  font-family: "Helveticaneuecyr-cond";
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   padding-bottom: 2px;
   text-transform: uppercase;
 }
@@ -205,6 +205,10 @@ h5 {
   padding-right: 35px;
   padding-top: 20px;
   font-weight: 600;
+}
+.top-panel__mob {
+  display: none;
+  float: left;
 }
 .header-menu {
   background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
@@ -251,6 +255,26 @@ h5 {
 }
 .common-container {
   max-width: 980px;
+}
+.steps-videos__slider .img-block,
+.education-videos__slider .img-block,
+.inspiration-videos__slider .img-block {
+  box-sizing: border-box;
+}
+.steps-videos__slider .img-block img:first-child,
+.education-videos__slider .img-block img:first-child,
+.inspiration-videos__slider .img-block img:first-child {
+  position: relative;
+  width: 95%;
+  z-index: 1;
+}
+.steps-videos__slider .img-block .play-circle,
+.education-videos__slider .img-block .play-circle,
+.inspiration-videos__slider .img-block .play-circle {
+  position: absolute;
+  z-index: 2;
+  left: 35%;
+  top: 25%;
 }
 .front-video__header,
 .steps-videos__header,
@@ -349,7 +373,7 @@ h5 {
   left: 45%;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 40%;
   box-sizing: border-box;
 }
 .footer-social__item {

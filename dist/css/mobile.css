@@ -1,0 +1,27 @@
+@media screen and (max-width: 600px) {
+  .matr-custom-logo:before {
+    font-size: 16px;
+  }
+  .common-container {
+    max-width: 600px;
+  }
+  .top-panel {
+    background-color: blue;
+  }
+  .top-panel__left {
+    display: none;
+  }
+  .top-panel__search {
+    display: none;
+  }
+  .top-panel__mob {
+    display: block;
+    margin: 15px 15px 15px 20px;
+  }
+  .header-menu__list {
+    display: none;
+  }
+  .footer {
+    background-color: blue;
+  }
+}

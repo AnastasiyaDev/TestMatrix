@@ -1,0 +1,77 @@
+@media screen and (max-width: 1040px) {
+  .top-panel,
+  .footer {
+    background-color: green;
+  }
+  .top-panel__left,
+  .footer__left {
+    font-size: 12px;
+  }
+  .common-container {
+    max-width: 700px;
+  }
+  .front-video__header {
+    font-size: 55px;
+  }
+  .front-video__img {
+    height: 400px;
+  }
+  .play-video {
+    left: 40%;
+    top: 28%;
+  }
+  .footer-menu__link,
+  .footer-location__item {
+    font-size: 10px;
+  }
+  .footer-menu {
+    margin: 10px 30px 0px;
+    width: 200px;
+  }
+  .footer-menu__item {
+    padding: 0% 1%;
+  }
+  .footer-social {
+    left: 38%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top-panel,
+  .footer {
+    background-color: yellow;
+  }
+  .common-container {
+    max-width: 560px;
+  }
+  .front-video__header {
+    font-size: 50px;
+  }
+  .front-video__img {
+    height: 300px;
+  }
+  .play-video {
+    left: 40%;
+    top: 28%;
+  }
+  .steps-videos,
+  .education-videos,
+  .inspiration-videos {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+  .footer-menu__link,
+  .footer-location__item {
+    font-size: 9px;
+  }
+  .footer-menu {
+    margin: 10px 20px 0px;
+    width: 180px;
+  }
+  .footer-menu__item {
+    padding: 0% 1%;
+  }
+  .footer-location {
+    margin: 15px 20px 0px;
+    letter-spacing: 0px;
+  }
+}
