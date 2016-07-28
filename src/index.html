@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width">
+    <title>Matrix.com</title>
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" media="(max-width: 1040px)" href="css/tablet.css">
+	<link rel="stylesheet" media="(max-width: 600px)" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+</head>
+<body>
+	<div class="header">
+		<div class="top-panel clearfix">
+			<div class="top-panel__left">
+				<h5 class="matr-chevron-down mar-pad-0">nearest salon  </h5>
+				<p class="mar-pad-0">Plush salon 92101</p>
+			</div>
+
+			<div class="top-panel__search matr-custom-search"></div>
+
+			<div id="mob-menu" class="top-panel__mob matr-navicon"></div>
+
+			<div class="top-panel__logo">
+				<a href=””>
+					<span aria-hidden=”true” class="matr-custom-logo marg-auto"></span> 
+				</a>
+			</div>
+		</div>
+		<!-- .top-panel -->
+
+		<div class="header-menu">
+
+			<div class="mob-panel clearfix">
+				<div class="mob-panel__left">
+					<h5 class="matr-chevron-down mar-pad-0">nearest salon  </h5>
+					<p class="mar-pad-0">Plush salon 92101</p>
+				</div>
+
+				<div class="mob-panel__search matr-custom-search"></div>
+			</div>
+
+			<ul class="header-menu__list unstyle list-inline">
+				<li class="header-menu__item"><a class="header-menu__link" href="">Haircare</a></li>
+				<li class="header-menu__item"><a class="header-menu__link" href="">Color</a></li>
+				<li class="header-menu__item"><a class="header-menu__link" href="">Styling</a></li>
+				<li class="header-menu__item"><a class="header-menu__link" href="">Texture</a></li>
+				<li class="header-menu__item"><a class="header-menu__link" href="">Get inspired</a></li>
+				<li class="header-menu__item"><a class="header-menu__link" href="">Social</a></li>
+				<li class="header-menu__item"><a class="header-menu__link" href="">News</a></li>
+				<li class="header-menu__item"><a class="header-menu__link" href="">About</a></li>
+				<li class="header-menu__item"><a class="header-menu__link" href="">Professional</a></li>
+			</ul>
+		</div>
+		<!-- .header-menu -->
+	</div>
+	<!-- .header -->
+
+	<div class="content">
+		<ol class="breadcrumb unstyle list-inline">
+			<li><a class="breadcrumb__link" href="">Home</a></li>
+    		<li class="breadcrumb__active">Videos</li>
+  		</ol>
+
+  		<div class="common-container marg-auto">
+
+  			<div class="front-video">
+	  			<h1 class="front-video__header">Videos</h1>
+	  			<a class="youtube-link" href="https://www.youtube.com/watch?v=-tztXOz8Vc0?autoplay=1">
+		  			<div class="front-video__img">
+		  				<div class="play-video matr-play-circle"></div>
+		  			</div>
+		  		</a>
+	  			<p class="front-video__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis, nisl at ullamcorper egestas, felisadi piscing dolor, a interdum lorem urna quis magna.</p>
+	  		</div>
+
+	  		<div class="steps-videos">
+	  			<h2 class="steps-videos__header">step <span class="color-red">by</span> step</h2>
+	  			<div class="steps-videos__slider slider"></div>
+	  			<div class="steps-videos__mob"></div>
+	  		</div>
+
+	  		<div class="education-videos">
+	  			<h2 class="education-videos__header">craft <span class="color-red">education</span></h2>
+	  			<div class="education-videos__slider slider"></div>
+	  			<div class="education-videos__mob"></div>
+	  		</div>
+
+	  		<div class="inspiration-videos">
+	  			<h2 class="inspiration-videos__header">inspiration</h2>
+	  			<div class="inspiration-videos__slider slider"></div>
+	  			<div class="inspiration-videos__mob"></div>
+	  		</div>
+
+	  	<script type="text/template" id="list-template">
+
+		<% _(videos).forEach(function(video) { %>
+	  			<div class="img-block">
+	  				<a class="youtube-link" href="https://www.youtube.com/watch?v=<%= video.id %>?autoplay=1">
+		  				<img src="http://img.youtube.com/vi/<%= video.id %>/mqdefault.jpg" alt="">
+		  				<img class="play-circle" src="img/playCircle.png">
+		  			</a>
+		  		</div>
+		<% }); %>
+
+		</script>
+
+
+		<script type="text/javascript">
+			
+		</script>
+
+  		</div>
+  		<!-- .common-container -->
+	</div>
+	<!-- .content -->
+
+	<div class="footer clearfix">
+		<ul class="footer-menu unstyle list-inline">
+			<li class="footer-menu__item"><a class="footer-menu__link" href="">Privacy Policy</a></li>
+			<li class="footer-menu__item"><a class="footer-menu__link" href="">Terms of use</a></li>
+			<li class="footer-menu__item"><a class="footer-menu__link" href="">Contact us</a></li>
+			<li class="footer-menu__item"><a class="footer-menu__link" href="">Newsletter</a></li>
+			<li class="footer-menu__item"><a class="footer-menu__link" href="">Sitemap</a></li>
+		</ul>
+
+<ul class="footer-social unstyle list-inline clearfix">
+			<li class="footer-social__item"><a class="footer-social__link matr-custom-facebook" href=""></a></li>
+			<li class="footer-social__item"><a class="footer-social__link matr-custom-twitter" href=""></a></li>
+			<li class="footer-social__item"><a class="footer-social__link matr-custom-pinterest" href=""></a></li>
+			<li class="footer-social__item"><a class="footer-social__link matr-custom-youtube" href=""></a></li>
+			<li class="footer-social__item"><a class="footer-social__link matr-custom-instagram" href=""></a></li>
+		</ul>
+		<ul class="footer-location unstyle">
+			<li class="footer-location__item">Location: <b>United States</b></li>
+			<li class="footer-location__item">Language: <b>English</b></li>
+		</ul>
+
+		
+		
+	</div>
+	<!-- .footer -->
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+	<script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+          	
+	<script src="js/main.js"></script>
+	<script src="js/data.js"></script>
+
+</body>
+</html>

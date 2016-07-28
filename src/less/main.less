@@ -1,0 +1,444 @@
+@red: #CD1D2C;
+@gray: #2A2A2A;
+@gray-text: #3d3d3d;
+@gray-line: #686868;
+@gray-t-footer: #737373;
+@font-black: "Helveticaneuecyr-black";
+@font-b: "Helveticaneuecyr-bold";
+@font-cond: "Helveticaneuecyr-cond";
+@font-cond-m: "Helveticaneuecyr-cond-medium";
+@font-i: "Helveticaneuecyr-italic";
+@font-light: "Helveticaneuecyr-light";
+@font-m: "Helveticaneuecyr-medium";
+@font-roman: "Helveticaneuecyr-roman";
+@font-thin: "Helveticaneuecyr-thin";
+
+@font-face {
+	font-family: 'icomatrix';
+	src:url('../icon-fonts/icomatrix.eot?7cvyol');
+	src:url('../icon-fonts/icomatrix.eot?7cvyol#iefix') format('embedded-opentype'),
+		url('../icon-fonts/icomatrix.ttf?7cvyol') format('truetype'),
+		url('../icon-fonts/icomatrix.woff?7cvyol') format('woff'),
+		url('../icon-fonts/icomatrix.svg?7cvyol#icomatrix') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="matr-"], [class*=" matr-"] {
+	font-family: 'icomatrix' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.matr-custom-logo:before {
+	content: "\e900";
+	color: #fff;
+	font-size: 18px;
+}
+.matr-chevron-down:after {
+	content: "\f078";
+}
+.matr-custom-search:before {
+	content: "\e901";
+}
+.matr-play-circle:before {
+	content: "\f144";
+	font-size: 150px;
+	opacity: 0.7;
+}
+.matr-custom-facebook:before {
+	content: "\e902";
+	color: @gray-t-footer;
+}
+.matr-custom-twitter:before {
+	content: "\e905";
+	color: @gray-t-footer;
+}
+.matr-custom-pinterest:before {
+	content: "\e904";
+	color: @gray-t-footer;
+}
+.matr-custom-youtube:before {
+	content: "\e906";
+	color: @gray-t-footer;
+}
+.matr-custom-instagram:before {
+	content: "\e903";
+	color: @gray-t-footer;
+}
+.matr-navicon:before {
+	content: "\f0c9";
+	font-size: 30px;
+	color: #fff;
+}
+@font-face 
+{
+    font-family: 'Helveticaneuecyr-black'; 
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-black.eot');
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-black.eot?#iefix') format('embedded-opentype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-black.woff') format('woff'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-black.ttf') format('truetype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-black.svg#Helveticaneuecyr-black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'Helveticaneuecyr-bold'; 
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-bold.eot');
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-bold.eot?#iefix') format('embedded-opentype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-bold.woff') format('woff'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-bold.ttf') format('truetype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-bold.svg#Helveticaneuecyr-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'Helveticaneuecyr-cond'; 
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-cond.eot');
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-cond.eot?#iefix') format('embedded-opentype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-cond.woff') format('woff'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-cond.ttf') format('truetype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-cond.svg#Helveticaneuecyr-cond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'Helveticaneuecyr-cond-medium'; 
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-cond-medium.eot');
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-cond-medium.eot?#iefix') format('embedded-opentype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-cond-medium.woff') format('woff'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-cond-medium.ttf') format('truetype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-cond-medium.svg#Helveticaneuecyr-cond-medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'Helveticaneuecyr-italic'; 
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-italic.eot');
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-italic.eot?#iefix') format('embedded-opentype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-italic.woff') format('woff'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-italic.ttf') format('truetype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-italic.svg#Helveticaneuecyr-italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'Helveticaneuecyr-light'; 
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-light.eot');
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-light.eot?#iefix') format('embedded-opentype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-light.woff') format('woff'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-light.ttf') format('truetype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-light.svg#Helveticaneuecyr-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'Helveticaneuecyr-medium'; 
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-medium.eot');
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-medium.eot?#iefix') format('embedded-opentype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-medium.woff') format('woff'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-medium.ttf') format('truetype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-medium.svg#Helveticaneuecyr-medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'Helveticaneuecyr-roman'; 
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-roman.eot');
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-roman.eot?#iefix') format('embedded-opentype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-roman.woff') format('woff'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-roman.ttf') format('truetype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-roman.svg#Helveticaneuecyr-roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'Helveticaneuecyr-thin'; 
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-thin.eot');
+    src: url('../HelveticaNeue_rus/helveticaneuecyr-thin.eot?#iefix') format('embedded-opentype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-thin.woff') format('woff'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-thin.ttf') format('truetype'),
+        url('../HelveticaNeue_rus/helveticaneuecyr-thin.svg#Helveticaneuecyr-thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+}
+html, body {
+	margin: 0px;
+  	padding: 0px;
+ 	min-width: 355px;
+  	max-width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-weight: 300;
+	color: #000;
+}
+a {
+  	outline: none;
+  	text-decoration: none;
+  	color: #000;
+}
+.clearfix:after {
+  	content: '';
+  	clear: both;
+  	display: table;
+	height: 0;
+}
+.unstyle {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.list-inline li {
+	display: inline-block;
+}
+.marg-auto {
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.mar-pad-0 {
+	margin: 0px;
+	padding: 0px;
+}
+.color-red {
+	color: @red;
+}
+h1, h2 {
+	text-transform: uppercase;
+}
+
+.header {
+	color: #fff;
+	min-height: 90px;
+}
+.mob-panel {
+	display: none;
+}
+.top-panel, .mob-panel {
+	background-color: @red; 
+	&__left {
+		font-size: 13px;
+		margin: 15px;
+		margin-left: 30px;
+		float: left;
+		h5 {
+			cursor: pointer; 
+			font-family: @font-cond;
+			font-weight: 600;
+			letter-spacing: 0px;
+			padding-bottom: 2px;
+			text-transform: uppercase;
+		}
+		p {
+			font-family: @font-light;
+		}
+	}
+	&__logo {
+		text-align: center;
+		display: block;
+		padding: 20px 20px 15px 20px;
+	}
+	&__search {
+		cursor: pointer;
+		float: right;
+		padding-right: 35px;
+		padding-top: 20px;
+		font-weight: 600;
+	}
+	&__mob {
+		display: none;
+		float: left; 
+	}	
+}
+.header-menu {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    text-align: center;
+    opacity: 1;
+    &__list {
+    	width: 100%;
+    	margin: 0px auto;
+    }
+    &__item {
+    	padding: 0% 2%;
+    	&:hover {
+			background: #000;
+		}
+    }
+    &__link{
+    	color: #fff;
+		font-size: 14px;
+		font-family: @font-cond;
+		text-transform: uppercase;
+		line-height: 2.5;
+    }
+    
+}
+.content {
+    height: auto !important;
+    margin: 0px auto 60px;
+    min-height: 100%;
+    padding: 0px 0px 100px;
+    box-sizing: border-box;
+}
+.breadcrumb {
+	color: @gray;
+	font-size: 12px;
+	font-family: @font-light;
+	text-transform: uppercase;
+	margin: 20px 0px 0px 50px;
+	&__link:after {
+		content: " / ";
+	}
+	&__active {
+		color: @red;
+		font-family: @font-roman;
+	}
+}
+.common-container {
+	max-width: 980px;
+	padding: 0px 10px;
+}
+.front-video {
+	width: 100%;
+	position: relative;
+	&__header {
+		font-size: 61px; 
+	}
+	&__img {
+		cursor: pointer; 
+		height: 500px;
+		background: url("http://img.youtube.com/vi/-tztXOz8Vc0/maxresdefault.jpg") no-repeat 0 0;
+		background-size: cover;  //contain
+		&:hover .play-video {
+			opacity: 0.8;
+		}
+	}
+	&__description {
+		font-size: 30px;
+		line-height: 31px;
+		color: @gray-text;
+		font-family: @font-b;
+		letter-spacing: -2px;
+		&:after {
+			background: @gray-line;
+			content: "";
+			display: block;
+			height: 2px;
+			margin: 40px 0px;
+		}
+	}
+}
+.play-video {
+	box-sizing: border-box;
+	position: absolute;
+	left: 42%;
+	top: 32%;
+}
+.steps-videos__mob, .education-videos__mob, .inspiration-videos__mob {
+	display: none;
+}
+
+.steps-videos__slider, .education-videos__slider, .inspiration-videos__slider, .steps-videos__mob, .education-videos__mob, .inspiration-videos__mob {	
+		.img-block {
+			box-sizing: border-box;
+			& img:first-child {
+				position: relative;
+	   			width: 95%;
+	   			z-index: 1;
+	        }
+			.play-circle {
+				position: absolute;
+			 	z-index: 2;
+			 	left: 35%;
+			 	top: 25%;
+			}
+		}
+	}	
+.front-video__header, .steps-videos__header, .education-videos__header, .inspiration-videos__header {
+	font-family: @font-m;
+	letter-spacing:-1px;
+	margin-bottom: 0px;
+}
+.steps-videos__header, .education-videos__header, .inspiration-videos__header {
+	margin-top: 60px;
+		font-size: 42px;
+}
+.youtube-link {
+	display: block;
+	position: relative; 
+}
+.footer {
+	height: 60px;
+	position: relative;
+	background: @gray;
+	text-transform: uppercase;
+	a {
+		&:hover {
+			color: @gray-t-footer + #222;
+		}
+	}
+}
+.footer-menu {
+	margin: 10px 40px 0px;
+	width: 300px;
+	float: left;
+	&__item {
+    	padding: 0% 2%;
+    }
+    &__link{
+    	color: @gray-t-footer;
+		line-height: 2;
+    }	
+}
+.footer-menu__link, .footer-location__item {
+	font-family: @font-m;
+	font-size: 12px;
+}
+.footer-location {
+	float: right;
+	margin: 15px 40px 0px;
+	color: @gray-t-footer + #444;
+	letter-spacing: 1px;
+	&__item {
+		white-space: nowrap;
+		text-align: right;
+		line-height: 1.65em;
+		b {
+			font-weight: 600;
+		}
+	}
+}
+.footer-social {
+	left: 45%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    box-sizing: border-box;
+    &__item {
+    	margin: 0px 5px;
+    }
+    &__link {
+    	font-size: 20px;
+    	padding: 0px 5px; 
+    }
+}
+
