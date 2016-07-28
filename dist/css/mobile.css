@@ -41,6 +41,7 @@
   }
   .mob-panel__search {
     padding: 15px;
+    width: 43%;
   }
   .search-form .form-search-open {
     background: transparent;
