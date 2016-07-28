@@ -24,12 +24,10 @@ const paths = {
     js:['src/js/**/*.js']
 };
 
-gulp.task('styles', function () {
-	return gulp.src(paths.less) 
-		// .pipe(debug({titile: 'src'}))
+gulp.task('styles', () => {
+	    gulp.src(paths.less) 
 		.pipe(gulpIf(isProduction, sourcemaps.init()))
 		.pipe(less())
-		// .pipe(concat('all.css'))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		 }))
@@ -39,47 +37,45 @@ gulp.task('styles', function () {
         .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('scripts', function() {
-    return gulp.src(paths.js)
+gulp.task('scripts', () => {
+         gulp.src(paths.js)
         .pipe(gulpIf(isProduction, sourcemaps.init()))
-        // .pipe(concat('all.js'))
         .pipe(gulpIf(isProduction, uglify()))
         .pipe(gulpIf(isProduction, sourcemaps.write()))
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('img', function() {
-    return gulp.src(paths.img)
+gulp.task('img', () => {
+         gulp.src(paths.img)
     	.pipe(imagemin())
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('entryFiles', function() {
-    return gulp.src(paths.html)
+gulp.task('entryFiles', () => {
+         gulp.src(paths.html)
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.reload({stream:true}));
 });
 
-gulp.task('eslint', function() {
-    return gulp.src('src/js/**/*.js')
+gulp.task('eslint', () => {
+        gulp.src('src/js/**/*.js')
         .pipe(gulpIf(isProduction, eslint()))
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 });
 
-gulp.task('watcher', function() {
+gulp.task('watcher', () => {
   gulp.watch(paths.less, ['styles']);
   gulp.watch(paths.js, ['scripts']);
   gulp.watch(paths.html, ['entryFiles']);
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', () => {
 
     browserSync.init({
          server: "./dist/"
      });
 });
-
 
 gulp.task('default', ['img', 'entryFiles', 'styles', 'scripts', 'serve', 'watcher']);

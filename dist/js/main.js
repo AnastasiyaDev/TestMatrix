@@ -41,7 +41,7 @@ $(document).ready(function(){
 				'maxWidth'      : '1000',
 	      		'maxHeight'     : '700',
 	      		'width'         : '80%',
-	      		'height'        : '50%',
+	      		'height'        : '60%',
 				'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
 				'type'			: 'swf',
 				'swf'			: {
