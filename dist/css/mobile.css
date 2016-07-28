@@ -3,7 +3,9 @@
     font-size: 16px;
   }
   .matr-custom-search:before {
-    font-size: 25px;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
   }
   .matr-play-circle:before {
     font-size: 100px;
@@ -39,6 +41,9 @@
   }
   .mob-panel__search {
     padding: 15px;
+  }
+  .search-form .form-search-open {
+    background: transparent;
   }
   .breadcrumb {
     font-size: 13px;

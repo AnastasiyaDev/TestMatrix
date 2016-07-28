@@ -27,6 +27,7 @@
 }
 .matr-custom-search:before {
   content: "\e901";
+  font-size: 16px;
 }
 .matr-play-circle:before {
   content: "\f144";
@@ -142,6 +143,12 @@ a {
   text-decoration: none;
   color: #000;
 }
+.vis {
+  visibility: visible;
+}
+.unvis {
+  visibility: hidden;
+}
 .clearfix:after {
   content: '';
   clear: both;
@@ -213,13 +220,48 @@ h2 {
   cursor: pointer;
   float: right;
   padding-right: 35px;
-  padding-top: 20px;
+  padding-top: 10px;
   font-weight: 600;
 }
 .top-panel__mob,
 .mob-panel__mob {
   display: none;
   float: left;
+}
+.search-form {
+  width: 100%;
+  position: relative;
+}
+.search-form button {
+  border: none;
+}
+.search-form input {
+  width: 100%;
+  padding: 8px 37px 9px 15px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  background: #EEE;
+  font: 13px Tahoma, Arial, sans-serif;
+  color: #555;
+  outline: none;
+}
+.search-form .form-search-open,
+.search-form .form-search-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  cursor: pointer;
+}
+.search-form .form-search-open {
+  background: #CD1D2C;
+}
+.search-form .form-search-submit {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  background: #EEE;
+}
+input[type="search"] {
+  -webkit-appearance: none;
 }
 .header-menu {
   background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;

@@ -47,6 +47,7 @@
 }
 .matr-custom-search:before {
 	content: "\e901";
+	font-size: 16px;
 }
 .matr-play-circle:before {
 	content: "\f144";
@@ -197,6 +198,12 @@ a {
   	text-decoration: none;
   	color: #000;
 }
+.vis {
+	visibility: visible;
+}
+.unvis {
+	visibility: hidden;
+}
 .clearfix:after {
   	content: '';
   	clear: both;
@@ -261,7 +268,7 @@ h1, h2 {
 		cursor: pointer;
 		float: right;
 		padding-right: 35px;
-		padding-top: 20px;
+		padding-top: 10px;
 		font-weight: 600;
 	}
 	&__mob {
@@ -269,6 +276,43 @@ h1, h2 {
 		float: left; 
 	}	
 }
+
+.search-form {
+	button {
+		border: none;
+	}	
+  	width: 100%;
+  	position: relative;
+	input {
+		width: 100%;
+		padding: 8px 37px 9px 15px;
+		box-sizing: border-box;
+		box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+		background: #EEE;
+		font: 13px Tahoma, Arial, sans-serif;
+		color: #555;
+		outline: none;
+	}
+	.form-search-open, .form-search-submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		// width: 37px;
+		height: 100%;
+		cursor: pointer;
+	}
+	.form-search-open {
+		background: @red;
+	}
+	.form-search-submit {
+		box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+		background: #EEE;
+	}
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
 .header-menu {
     background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
     text-align: center;
@@ -290,7 +334,6 @@ h1, h2 {
 		text-transform: uppercase;
 		line-height: 2.5;
     }
-    
 }
 .content {
     height: auto !important;

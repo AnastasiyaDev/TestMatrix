@@ -30,6 +30,13 @@ $(document).ready(function(){
 	  ]
   });
 
+
+  	$('.search-form').on('click', '#openFormSearch', function() { 
+  		if ($('#searchForm > .unvis').hasClass("unvis")) {
+	        $('#searchForm > .unvis').addClass('vis').removeClass('unvis'); 
+	    } 
+  	});
+
   	$(".youtube-link").on( 'click', function(event) {
 	  	event.stopPropagation();
 		$.fancybox({
@@ -72,5 +79,7 @@ $(document).ready(function(){
 	        }
 	    );
 	})
+
+
  
 });
