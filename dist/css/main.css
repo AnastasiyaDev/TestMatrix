@@ -27,7 +27,8 @@
 }
 .matr-custom-search:before {
   content: "\e901";
-  font-size: 16px;
+  color: #fff;
+  font-size: 18px;
 }
 .matr-play-circle:before {
   content: "\f144";
@@ -133,6 +134,7 @@ body {
   padding: 0px;
   min-width: 355px;
   max-width: 100%;
+  height: 100%;
   font-size: 16px;
   font-weight: 300;
   color: #000;
@@ -257,7 +259,7 @@ h2 {
 }
 .search-form .form-search-submit {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.3);
-  background: #EEE;
+  background: #dddddd;
 }
 input[type="search"] {
   -webkit-appearance: none;
@@ -345,51 +347,33 @@ input[type="search"] {
   left: 42%;
   top: 32%;
 }
-.steps-videos__mob,
-.education-videos__mob,
-.inspiration-videos__mob {
+.videos__mob {
   display: none;
 }
-.steps-videos__slider .img-block,
-.education-videos__slider .img-block,
-.inspiration-videos__slider .img-block,
-.steps-videos__mob .img-block,
-.education-videos__mob .img-block,
-.inspiration-videos__mob .img-block {
+.slider .img-block,
+.videos__mob .img-block {
   box-sizing: border-box;
 }
-.steps-videos__slider .img-block img:first-child,
-.education-videos__slider .img-block img:first-child,
-.inspiration-videos__slider .img-block img:first-child,
-.steps-videos__mob .img-block img:first-child,
-.education-videos__mob .img-block img:first-child,
-.inspiration-videos__mob .img-block img:first-child {
+.slider .img-block img:first-child,
+.videos__mob .img-block img:first-child {
   position: relative;
   width: 95%;
   z-index: 1;
 }
-.steps-videos__slider .img-block .play-circle,
-.education-videos__slider .img-block .play-circle,
-.inspiration-videos__slider .img-block .play-circle,
-.steps-videos__mob .img-block .play-circle,
-.education-videos__mob .img-block .play-circle,
-.inspiration-videos__mob .img-block .play-circle {
+.slider .img-block .play-circle,
+.videos__mob .img-block .play-circle {
   position: absolute;
   z-index: 2;
   left: 35%;
   top: 25%;
 }
 .front-video__header,
-.steps-videos__header,
-.education-videos__header,
-.inspiration-videos__header {
+.videos__header {
   font-family: "Helveticaneuecyr-medium";
   letter-spacing: -1px;
   margin-bottom: 0px;
 }
-.steps-videos__header,
-.education-videos__header,
-.inspiration-videos__header {
+.videos__header {
   margin-top: 60px;
   font-size: 42px;
 }

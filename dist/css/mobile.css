@@ -4,7 +4,6 @@
   }
   .matr-custom-search:before {
     font-size: 26px;
-    color: #fff;
     font-weight: 600;
   }
   .matr-play-circle:before {
@@ -71,40 +70,28 @@
     left: 40%;
     top: 22%;
   }
-  .steps-videos,
-  .education-videos,
-  .inspiration-videos {
+  .videos {
     width: 100%;
   }
   .front-video__header,
-  .steps-videos__header,
-  .education-videos__header,
-  .inspiration-videos__header {
+  .videos__header {
     font-size: 30px;
     margin-bottom: 10px;
     margin-left: 10px;
   }
-  .steps-videos__slider,
-  .education-videos__slider,
-  .inspiration-videos__slider {
+  .slider {
     display: none !important;
   }
-  .steps-videos__mob,
-  .education-videos__mob,
-  .inspiration-videos__mob {
+  .videos__mob {
     display: block;
     text-align: center;
   }
-  .steps-videos__mob .img-block,
-  .education-videos__mob .img-block,
-  .inspiration-videos__mob .img-block {
+  .videos__mob .img-block {
     margin-bottom: 50px;
     visibility: hidden;
     position: absolute;
   }
-  .steps-videos__mob .img-block:nth-child(-n+3),
-  .education-videos__mob .img-block:nth-child(-n+3),
-  .inspiration-videos__mob .img-block:nth-child(-n+3) {
+  .videos__mob .img-block:nth-child(-n+3) {
     position: static;
     visibility: visible;
   }

@@ -47,7 +47,8 @@
 }
 .matr-custom-search:before {
 	content: "\e901";
-	font-size: 16px;
+	color: #fff;
+	font-size: 18px;
 }
 .matr-play-circle:before {
 	content: "\f144";
@@ -188,7 +189,7 @@ html, body {
   	padding: 0px;
  	min-width: 355px;
   	max-width: 100%;
-	// height: 100%;
+	height: 100%;
 	font-size: 16px;
 	font-weight: 300;
 	color: #000;
@@ -306,7 +307,7 @@ h1, h2 {
 	}
 	.form-search-submit {
 		box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
-		background: #EEE;
+		background: #EEE - #111;
 	}
 }
 input[type="search"] {
@@ -396,11 +397,11 @@ input[type="search"] {
 	left: 42%;
 	top: 32%;
 }
-.steps-videos__mob, .education-videos__mob, .inspiration-videos__mob {
+.videos__mob {
 	display: none;
 }
 
-.steps-videos__slider, .education-videos__slider, .inspiration-videos__slider, .steps-videos__mob, .education-videos__mob, .inspiration-videos__mob {	
+.slider, .videos__mob {	
 		.img-block {
 			box-sizing: border-box;
 			& img:first-child {
@@ -416,12 +417,12 @@ input[type="search"] {
 			}
 		}
 	}	
-.front-video__header, .steps-videos__header, .education-videos__header, .inspiration-videos__header {
+.front-video__header, .videos__header {
 	font-family: @font-m;
 	letter-spacing:-1px;
 	margin-bottom: 0px;
 }
-.steps-videos__header, .education-videos__header, .inspiration-videos__header {
+.videos__header {
 	margin-top: 60px;
 		font-size: 42px;
 }

@@ -51,9 +51,7 @@
     left: 40%;
     top: 28%;
   }
-  .steps-videos,
-  .education-videos,
-  .inspiration-videos {
+  .videos {
     width: 90%;
     margin: 0 auto 20px;
   }
