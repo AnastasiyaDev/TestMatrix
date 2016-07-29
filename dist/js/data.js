@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var videolist = [
     {
@@ -42,13 +42,13 @@ var inspiration = [];
 
 var tmpl = _.template($('#list-template').html());
 
-var $stepsSlider = $('.steps-videos__slider');
-var $educationSlider = $('.education-videos__slider');
-var $inspirationSlider = $('.inspiration-videos__slider');
+var $stepsVideos = $('.steps-videos');
+var $educationVideos = $('.education-videos');
+var $inspirationVideos = $('.inspiration-videos');
 
-var $stepsMob = $('.steps-videos__mob');
-var $educationMob = $('.education-videos__mob');
-var $inspirationMob = $('.inspiration-videos__mob');
+var $stepsVideosMob = $('.steps-videos-mob');
+var $educationVideosMob = $('.education-videos-mob');
+var $inspirationVideosMob = $('.inspiration-videos-mob');
 
 
 videolist.forEach(function(item) {
@@ -68,13 +68,16 @@ videolist.forEach(function(item) {
       }
   });
 
-$stepsSlider.html(tmpl({ videos: steps }));
-$educationSlider.html(tmpl({ videos: education }));
-$inspirationSlider.html(tmpl({ videos: inspiration }));
+$stepsVideos.html(tmpl({ videos: steps, videoНeader: 'step <span class="color-red">by</span> step', type: 'slider'}));
+$educationVideos.html(tmpl({ videos: education, videoНeader: 'craft <span class="color-red">education</span>', type: 'slider'}));
+$inspirationVideos.html(tmpl({ videos: inspiration, videoНeader: 'inspiration', type: 'slider' }));
 
-$stepsMob.html(tmpl({ videos: steps }));
-$stepsMob.append("<button id='more-steps' class='load-more'>Load more</button>");
-$educationMob.html(tmpl({ videos: education }));
-$educationMob.append("<button id='more-education' class='load-more'>Load more</button>");        
-$inspirationMob.html(tmpl({ videos: inspiration }));
-$inspirationMob.append("<button id='more-inspiration' class='load-more'>Load more</button>");              
+
+$stepsVideosMob.html(tmpl({ videos: steps, videoНeader: 'step <span class="color-red">by</span> step', type: 'videos__mob' }));
+$stepsVideosMob.append('<button id="more-steps" class="load-more">Load more</button>');
+
+$educationVideosMob.html(tmpl({ videos: education, videoНeader: 'craft <span class="color-red">education</span>', type: 'videos__mob' }));
+$educationVideosMob.append('<button id="more-education" class="load-more">Load more</button>');   
+
+$inspirationVideosMob.html(tmpl({ videos: inspiration, videoНeader: 'inspiration', type: 'videos__mob' }));
+$inspirationVideosMob.append('<button id="more-inspiration" class="load-more">Load more</button>');              

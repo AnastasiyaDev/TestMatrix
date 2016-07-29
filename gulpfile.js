@@ -59,7 +59,7 @@ gulp.task('entryFiles', () => {
 });
 
 gulp.task('eslint', () => {
-        gulp.src('src/js/**/*.js')
+        gulp.src('src/js/main.js')
         .pipe(gulpIf(isProduction, eslint()))
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
