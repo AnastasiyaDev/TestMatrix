@@ -86,9 +86,6 @@
     display: block;
     text-align: center;
   }
-  .videos__mob .videos__header {
-    text-align: left !important;
-  }
   .videos__mob .img-block {
     margin-bottom: 50px;
     visibility: hidden;
