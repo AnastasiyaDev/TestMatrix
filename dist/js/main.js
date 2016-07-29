@@ -4,7 +4,7 @@
 
      var $slider = $('.slider');
      var $searchForm = $('.search-form');
-     var $allUnvisEl = $('#searchForm > .unvis');
+     var $allUnvisEl = $('.search-form > .unvis');
      var $linkOnYoutube = $('.youtube-link');
      var $imgBlock = $('.img-block');
      var $playVideo = $('.play-circle');
@@ -36,7 +36,7 @@
          }]
      });
 
-     $searchForm.on('click', '#openFormSearch', function() {
+     $searchForm.on('click', '.form-search-open', function() {
          if ($allUnvisEl.hasClass('unvis')) {
              $allUnvisEl.addClass('vis').removeClass('unvis');
          }
