@@ -81,11 +81,6 @@
   .education-videos__header,
   .inspiration-videos__header {
     font-size: 30px;
-  }
-  .front-video__header,
-  .steps-videos__header,
-  .education-videos__header,
-  .inspiration-videos__header {
     margin-bottom: 10px;
     margin-left: 10px;
   }
