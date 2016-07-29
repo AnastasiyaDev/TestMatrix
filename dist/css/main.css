@@ -350,21 +350,23 @@ input[type="search"] {
   left: 42%;
   top: 32%;
 }
-.videos-mob {
+.steps-videos-mob,
+.education-videos-mob,
+.inspiration-videos-mob {
   display: none;
 }
 .slider .img-block,
-.videos__mob .img-block {
+.mob .img-block {
   box-sizing: border-box;
 }
 .slider .img-block img:first-child,
-.videos__mob .img-block img:first-child {
+.mob .img-block img:first-child {
   position: relative;
   width: 95%;
   z-index: 1;
 }
 .slider .img-block .play-circle,
-.videos__mob .img-block .play-circle {
+.mob .img-block .play-circle {
   position: absolute;
   z-index: 2;
   left: 35%;

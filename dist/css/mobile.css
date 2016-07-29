@@ -82,16 +82,18 @@
   .videos-slider {
     display: none !important;
   }
-  .videos-mob {
+  .steps-videos-mob,
+  .education-videos-mob,
+  .inspiration-videos-mob {
     display: block;
     text-align: center;
   }
-  .videos__mob .img-block {
+  .mob .img-block {
     margin-bottom: 50px;
     visibility: hidden;
     position: absolute;
   }
-  .videos__mob .img-block:nth-child(-n+3) {
+  .mob .img-block:nth-child(-n+3) {
     position: static;
     visibility: visible;
   }

@@ -90,18 +90,19 @@
 	  		</div>
 	  		<!-- .front-video -->
 
-	  		<div class="steps-videos videos-slider videos"></div>
-	  		<div class="education-videos videos-slider videos"></div>
-	  		<div class="inspiration-videos videos-slider videos"></div>
+	  		<div class="steps-videos"></div>
+	  		<div class="education-videos"></div>
+	  		<div class="inspiration-videos"></div>
 
-	  		<div class="steps-videos-mob videos-mob videos"></div>
-	  		<div class="education-videos-mob videos-mob videos"></div>
-	  		<div class="inspiration-videos-mob videos-mob videos"></div>
+	  		<div class="steps-videos-mob"></div>
+	  		<div class="education-videos-mob"></div>
+	  		<div class="inspiration-videos-mob"></div>
 
 
 		  	<script type="text/template" id="list-template">
 
-		  		<h2 class="videos__header"><%= videoНeader %></h2>
+			<div class="videos-<%= type %> videos">
+		  		<h2 class="videos__header"><%= videoTitle %></h2>
 			  	<div class="<%= type %>">
 				<% _(videos).forEach(function(video) { %>
 					<% _(video.list).forEach(function(id) { %>
@@ -114,6 +115,7 @@
 					<% }); %>
 				<% }); %>
 				</div>
+			</div>	
 
 			</script>
 
@@ -151,9 +153,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
 	<script type="text/javascript"
           src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
-          	
-	<script src="js/main.js"></script>
-	<script src="js/data.js"></script>
+    
+    <script src="js/all.js"></script>   	
+	<!-- <script src="js/main.js"></script> -->
+	
 
 </body>
 </html>

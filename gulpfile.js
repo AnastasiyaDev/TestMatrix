@@ -6,13 +6,11 @@ const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const minifyCss = require('gulp-minify-css');
-const debug = require('gulp-debug');
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 const eslint = require('gulp-eslint');
 const gulpIf = require('gulp-if');
-const del = require('del');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 const isProduction = process.env.NODE_ENV == 'production';
@@ -40,6 +38,7 @@ gulp.task('styles', () => {
 gulp.task('scripts', () => {
     gulp.src(paths.js)
         .pipe(gulpIf(isProduction, sourcemaps.init()))
+        .pipe(concat('all.js'))
         .pipe(gulpIf(isProduction, uglify()))
         .pipe(gulpIf(isProduction, sourcemaps.write()))
         .pipe(gulp.dest('dist/js'))
