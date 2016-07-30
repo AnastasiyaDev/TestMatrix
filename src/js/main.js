@@ -1,62 +1,32 @@
- /*global $ _*/
-
- var steps = [];
- var education = [];
- var inspiration = [];
+/*global $ _*/
 
  var tmpl = _.template($('#list-template').html());
 
- var $stepsVideos = $('.steps-videos');
- var $educationVideos = $('.education-videos');
- var $inspirationVideos = $('.inspiration-videos');
-
- var $stepsVideosMob = $('.steps-videos-mob');
- var $educationVideosMob = $('.education-videos-mob');
- var $inspirationVideosMob = $('.inspiration-videos-mob');
-
- var titleSteps = 'step <span class="color-red">by</span> step';
- var titleEducation = 'craft <span class="color-red">education</span>';
- var titleInspiration = 'inspiration';
-
- // var titles = {
- //     'Step by Step' : 'step <span class="color-red">by</span> step',
- //     'Craft Education' : 'craft <span class="color-red">education</span>',
- //     'Inspiration' : 'inspiration'
- // };
-
- videoList.forEach(function(item) {
-     switch (item.title) {
-     case 'Step by Step':
-         {
-             steps.push(item);
-             break;
-         }
-     case 'Craft Education':
-         {
-             education.push(item);
-             break;
-         }
-     case 'Inspiration':
-         {
-             inspiration.push(item);
-             break;
-         }
+ var types = {
+     'Step by Step': {
+         'type': 'steps-videos',
+         'title': 'step <span class="color-red">by</span> step'
+     },
+     'Craft Education': {
+         'type': 'education-videos',
+         'title': 'craft <span class="color-red">education</span>'
+     },
+     'Inspiration': {
+         'type': 'inspiration-videos',
+         'title': 'inspiration'
      }
- });
+ };
 
- $stepsVideos.html(tmpl({ videos: steps, videoTitle: titleSteps, type: 'slider' }));
- $educationVideos.html(tmpl({ videos: education, videoTitle: titleEducation, type: 'slider' }));
- $inspirationVideos.html(tmpl({ videos: inspiration, videoTitle: titleInspiration, type: 'slider' }));
-
-
- $stepsVideosMob.html(tmpl({ videos: steps, videoTitle: titleSteps, type: 'mob' }))
- .append('<button id="more-steps" class="load-more">Load more</button>');
-
- $educationVideosMob.html(tmpl({ videos: education, videoTitle: titleEducation, type: 'mob' }))
- .append('<button id="more-education" class="load-more">Load more</button>');
-
- $inspirationVideosMob.html(tmpl({ videos: inspiration, videoTitle: titleInspiration, type: 'mob' }))
- .append('<button id="more-inspiration" class="load-more">Load more</button>');
+ for (var key in types) {
+     if (types.hasOwnProperty(key)) {
+         var videoSection = videoList.filter(function(item) {
+             return item.title === key;
+         });
+         $('.' + types[key].type).html(tmpl({ videos: videoSection, videoTitle: types[key].title, type: 'slider' }));
+         $('.' + types[key].type + '-mob').html(tmpl({ videos: videoSection, videoTitle: types[key].title, type: 'mob' }))
+             .append('<button id="more-' + types[key] + '" class="load-more">Load more</button>');
+     }
+ }
 
  $(document).ready(function() {
 
