@@ -57,7 +57,7 @@ var videoList = [{
          });
          $('.' + types[key].type).html(tmpl({ videos: videoSection, videoTitle: types[key].title, type: 'slider' }));
          $('.' + types[key].type + '-mob').html(tmpl({ videos: videoSection, videoTitle: types[key].title, type: 'mob' }))
-             .append('<button id="more-' + types[key] + '" class="load-more">Load more</button>');
+             .append('<button id="more-' + types[key].type + '" class="load-more">Load more</button>');
      }
  }
 
@@ -69,8 +69,8 @@ var videoList = [{
      var $linkOnYoutube = $('.youtube-link');
      var $imgBlock = $('.img-block');
      var $playVideo = $('.play-circle');
-     var $moreVideoButton = $('#more-steps');
-     var $stepsVideoForMob = $('.steps-videos__mob');
+     var $moreStepsVideoButton = $('#more-steps-videos');
+     var $stepsVideoMob = $('.mob');
 
      $slider.slick({
          dots: false,
@@ -137,11 +137,12 @@ var videoList = [{
 
      );
 
-     $moreVideoButton.click(function() {
-         $stepsVideoForMob.find('.img-block:not(:visible):lt(2)').slideToggle('fast',
+     $moreStepsVideoButton.click(function() {
+         $stepsVideoMob.find('.img-block:not(:visible):lt(2)').slideToggle('fast',
              function() {
-                 if ($stepsVideoForMob.find('.img-block:not(:visible)').length == 0) {
-                     $moreVideoButton.css('display', 'none');
+                 // $imgBlock.css({'visibility':'visible', 'position':'static'});
+                 if ($stepsVideoMob.find('.img-block:not(:visible)').length == 0) {
+                     $moreStepsVideoButton.css('display', 'none');
                  }
              }
          );
