@@ -1,0 +1,132 @@
+@import './main';
+
+@tablet: ~"screen and (max-width: 1040px)";
+@tablet-mini: ~"screen and (max-width: 767px)";
+@mobile: ~"screen and (max-width: 600px)";
+
+@gray: #2A2A2A;
+@gray-t-footer: #737373;
+@font-m: "Helveticaneuecyr-medium";
+
+.footer {
+	height: 60px;
+	// margin-top: -60px;
+	position: relative;
+	background: @gray;
+	text-transform: uppercase;
+	a {
+		&:hover {
+			color: @gray-t-footer + #222;
+		}
+	}
+
+	@media @mobile {
+		display: flex; 
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch; 
+		height: 300px;		
+	}
+}
+.footer-menu {
+	margin: 10px 40px 0px;
+	width: 300px;
+	float: left;
+	&__item {
+    	padding: 0% 2%;
+    }
+    &__link{
+    	color: @gray-t-footer;
+		line-height: 2;
+    }	
+
+    @media @tablet {
+		margin: 10px 30px 0px;
+		width: 200px;
+		&__item {
+	    	padding: 0% 1%;
+	    }		
+	}
+
+	@media @tablet-mini {
+		margin: 10px 20px 0px;
+		width: 180px;
+		&__item {
+	    	padding: 0% 1%;
+	    }	
+	}
+
+	@media @mobile {
+		width: auto;
+		margin-top: 25px;
+		order: 3;
+	}
+}
+.footer-menu__link, .footer-location__item {
+	font-family: @font-m;
+	font-size: 12px;
+	
+	@media @tablet {
+		font-size: 10px;		
+	}
+
+	@media @tablet-mini {
+		font-size: 9px;		
+	}
+
+	@media @mobile {
+		font-size: 11px;
+	}
+}
+.footer-location {
+	float: right;
+	margin: 15px 40px 0px;
+	color: @gray-t-footer + #444;
+	letter-spacing: 1px;
+	&__item {
+		white-space: nowrap;
+		text-align: right;
+		line-height: 1.65em;
+		b {
+			font-weight: 600;
+		}
+	}
+
+	@media @tablet-mini{
+		margin: 15px 20px 0px;
+		letter-spacing: 0px;		
+	}
+
+	@media @mobile {
+		margin: 0px 20px;
+		&__item {
+			text-align: left;	
+		}
+		order: 1;		
+	}
+}
+.footer-social {
+	left: 45%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    box-sizing: border-box;
+    &__item {
+    	margin: 0px 5px;
+    }
+    &__link {
+    	font-size: 20px;
+    	padding: 0px 5px; 
+    }
+
+    @media @tablet {
+		left: 38%;    	
+    }
+
+	@media @mobile {
+		text-align: left;
+		position: static;
+		order: 0;
+		margin: 25px 10px; 		
+	}
+}
