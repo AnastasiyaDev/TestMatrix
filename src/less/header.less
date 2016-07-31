@@ -5,6 +5,7 @@
 @red: #CD1D2C;
 @font-cond: "Helveticaneuecyr-cond";
 @font-light: "Helveticaneuecyr-light";
+@font-m: "Helveticaneuecyr-medium";
 
 .header {
 	color: #fff;
@@ -132,27 +133,27 @@ input[type="search"] {
     &__list {
     	width: 100%;
     	margin: 0px auto;
+    	// white-space: nowrap;
     }
     &__item {
-    	padding: 0% 2%;
+    	padding: 0% 1.5%;
     	&:hover {
 			background: #000;
 		}
     }
     &__link{
     	color: #fff;
-		font-size: 14px;
-		font-family: @font-cond;
+		font-size: 12px;
 		text-transform: uppercase;
 		line-height: 2.5;
     }
 
     @media @tablet-mini {
 	    &__item {
-	    	padding: 0% 1.3%;
+	    	padding: 0% 0.9%;
 	    }
 	    &__link{
-			font-size: 13px;
+			font-size: 11px;
 	    }     	
     }
 
