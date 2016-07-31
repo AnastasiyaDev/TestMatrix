@@ -51,6 +51,12 @@ gulp.task('img', () => {
         .pipe(gulp.dest('dist/img'));
 });
 
+gulp.task('asset', () => {
+    gulp.src('src/asset/**/**/*.*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/asset'));
+});
+
 gulp.task('entryFiles', () => {
     gulp.src(paths.html)
         .pipe(gulp.dest('dist'))
@@ -77,4 +83,4 @@ gulp.task('serve', () => {
     });
 });
 
-gulp.task('default', ['img', 'entryFiles', 'styles', 'scripts', 'serve', 'watcher']);
+gulp.task('default', ['asset', 'img', 'entryFiles', 'styles', 'scripts', 'serve', 'watcher']);
