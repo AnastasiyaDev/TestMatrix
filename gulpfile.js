@@ -53,7 +53,6 @@ gulp.task('img', () => {
 
 gulp.task('asset', () => {
     gulp.src('src/asset/**/**/*.*')
-        .pipe(imagemin())
         .pipe(gulp.dest('dist/asset'));
 });
 

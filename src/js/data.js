@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: "true"*/
 var videoList = [{
     'title': 'Step by Step',
     'list': [
@@ -29,4 +30,3 @@ var videoList = [{
         '6oPBFnsqJW8'
     ]
 }];
-
