@@ -1,6 +1,6 @@
 /*eslint no-unused-vars: "true"*/
 var videoList = [{
-    'title': 'Step by Step',
+    'title': 'Step <span class="color-red">by</span> Step',
     'list': [
         'z8M0Fa1JVco',
         'Wi2KcdoCuo4',
@@ -10,7 +10,7 @@ var videoList = [{
         'DG4FAU5qmMY'
     ]
 }, {
-    'title': 'Craft Education',
+    'title': 'Craft <span class="color-red">Education</span>',
     'list': [
         'RmNWNLXmswk',
         '-tztXOz8Vc0',

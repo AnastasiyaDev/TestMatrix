@@ -74,46 +74,38 @@
 			<li><a class="breadcrumb__link" href="">Home</a></li>
     		<li class="breadcrumb__active">Videos</li>
   		</ol>
+  		<!-- .breadcrumb  -->
 
   		<div class="common-container marg-auto">
 
   			<div class="front-video">
 	  			<h1 class="front-video__header">Videos</h1>
 	  			<a class="youtube-link" href="https://www.youtube.com/watch?v=-tztXOz8Vc0?autoplay=1">
-		  			<div class="front-video__img">
-		  				<div class="play-video matr-play-circle"></div>
-		  			</div>
+	  				<img class="front-video__front-img" src="http://img.youtube.com/vi/-tztXOz8Vc0/maxresdefault.jpg" alt="">
+					<img class="play-circle" src="img/playCircle.png">
 		  		</a>
 	  			<p class="front-video__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis, nisl at ullamcorper egestas, felisadi piscing dolor, a interdum lorem urna quis magna.</p>
 	  		</div>
 	  		<!-- .front-video -->
 
-	  		<div class="steps-videos"></div>
-	  		<div class="education-videos"></div>
-	  		<div class="inspiration-videos"></div>
+	  		<div id="videos"></div>
 
-	  		<div class="steps-videos-mob"></div>
-	  		<div class="education-videos-mob"></div>
-	  		<div class="inspiration-videos-mob"></div>
+			<script type="text/template" id="list-template">
 
-
-		  	<script type="text/template" id="list-template">
-
-			<div class="videos-<%= type %> videos">
-		  		<h2 class="videos__header"><%= videoTitle %></h2>
-			  	<div class="<%= type %>">
-				<% _(videos).forEach(function(video) { %>
-					<% _(video.list).forEach(function(id) { %>
-			  			<div class="img-block">
-			  				<a class="youtube-link" href="https://www.youtube.com/watch?v=<%= id %>?autoplay=1">
-				  				<img src="http://img.youtube.com/vi/<%= id %>/mqdefault.jpg" alt="">
-				  				<img class="play-circle" src="img/playCircle.png">
-				  			</a>
-				  		</div>
+				<div class="video-block">
+					<% _(videos).forEach(function(video) { %>
+					<h2 class="video-block__header"><%= video.title %></h2>
+				  	<div class="slider">
+						<% _(video.list).forEach(function(id) { %>
+				  			<a class="youtube-link" href="https://www.youtube.com/watch?v=<%= id %>?autoplay=1">
+					  			<img src="http://img.youtube.com/vi/<%= id %>/mqdefault.jpg" alt="">
+					  			<img class="play-circle" src="img/playCircle.png">
+					  		</a>
+						<% }); %>
+					</div>
+					<button id="more-" class="load-more marg-auto">Load more</button>
 					<% }); %>
-				<% }); %>
-				</div>
-			</div>	
+				</div>	
 
 			</script>
 

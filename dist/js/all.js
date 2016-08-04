@@ -1,6 +1,6 @@
 /*eslint no-unused-vars: "true"*/
 var videoList = [{
-    'title': 'Step by Step',
+    'title': 'Step <span class="color-red">by</span> Step',
     'list': [
         'z8M0Fa1JVco',
         'Wi2KcdoCuo4',
@@ -10,7 +10,7 @@ var videoList = [{
         'DG4FAU5qmMY'
     ]
 }, {
-    'title': 'Craft Education',
+    'title': 'Craft <span class="color-red">Education</span>',
     'list': [
         'RmNWNLXmswk',
         '-tztXOz8Vc0',
@@ -34,40 +34,24 @@ var videoList = [{
 
 var tmpl = _.template($('#list-template').html());
 
-var types = {
-    'Step by Step': {
-        'type': 'steps-videos',
-        'title': 'step <span class="color-red">by</span> step'
-    },
-    'Craft Education': {
-        'type': 'education-videos',
-        'title': 'craft <span class="color-red">education</span>'
-    },
-    'Inspiration': {
-        'type': 'inspiration-videos',
-        'title': 'inspiration'
-    }
-};
+$('#videos').html(tmpl({ videos: videoList }));
 
-for (var key in types) {
-    if (types.hasOwnProperty(key)) {
-        var videoSection = videoList.filter(function(item) {
-            return item.title === key;
-        });
-        $('.' + types[key].type).html(tmpl({ videos: videoSection, videoTitle: types[key].title, type: 'slider' }));
-        $('.' + types[key].type + '-mob').html(tmpl({ videos: videoSection, videoTitle: types[key].title, type: 'mob' }))
-            .append('<button id="more-' + types[key].type + '" class="load-more">Load more</button>');
-    }
-}
+// $('.video-block__header').html($('.video-block__header').text().replace(/\s(\W+)\s/g, '<span class="color-red">$1</span>'));
+
+// var i = 0; 
+// alert('Step by Step'.replace(/\s/gi, function() {
+//     if (i === 1) return '<span class="color-red">';
+//     if (i === 2) return '</span>';
+// }));
 
 var $slider = $('.slider');
 var $searchForm = $('.search-form');
 var $allUnvisEl = $('.search-form > .unvis');
 var $linkOnYoutube = $('.youtube-link');
-var $imgBlock = $('.img-block');
+var $youTubeLink = $('.youtube-link');
 var $playVideo = $('.play-circle');
-var $moreStepsVideoButton = $('#more-steps-videos');
-var $stepsVideoMob = $('.mob');
+// var $moreStepsVideoButton = $('#more-steps-videos');
+// var $stepsVideoMob = $('.mob');
 
 $slider.slick({
     dots: false,
@@ -86,9 +70,11 @@ $slider.slick({
     }, {
         breakpoint: 601,
         settings: {
-            slidesToShow: 1,
+            arrows: false,
+            vertical: true,
+            slidesToShow: 3,
             slidesToScroll: 1,
-            infinite: true,
+            infinite: false,
             dots: false
         }
     }]
@@ -124,7 +110,7 @@ $linkOnYoutube.on('click', function(event) {
     return false;
 });
 
-$imgBlock.hover(
+$youTubeLink.hover(
     function() {
         $(this).find($playVideo).attr('src', 'img/playCircle-active.png');
     },
@@ -134,13 +120,13 @@ $imgBlock.hover(
 
 );
 
-$moreStepsVideoButton.click(function() {
-    $stepsVideoMob.find('.img-block:not(:visible):lt(2)').slideToggle('fast',
-        function() {
-            // $imgBlock.css({'visibility':'visible', 'position':'static'});
-            if ($stepsVideoMob.find('.img-block:not(:visible)').length == 0) {
-                $moreStepsVideoButton.css('display', 'none');
-            }
-        }
-    );
-});
+// $moreStepsVideoButton.click(function() {
+//     $stepsVideoMob.find('.img-block:not(:visible):lt(2)').slideToggle('fast',
+//         function() {
+//             // $imgBlock.css({'visibility':'visible', 'position':'static'});
+//             if ($stepsVideoMob.find('.img-block:not(:visible)').length == 0) {
+//                 $moreStepsVideoButton.css('display', 'none');
+//             }
+//         }
+//     );
+// });

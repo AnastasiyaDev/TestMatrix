@@ -1,7 +1,6 @@
 @tablet: ~"screen and (max-width: 1040px)";
 @tablet-mini: ~"screen and (max-width: 767px)";
 @mobile: ~"screen and (max-width: 600px)";
-
 @red: #CD1D2C;
 @gray: #2A2A2A;
 @gray-text: #3d3d3d;
@@ -16,458 +15,400 @@
 @font-m: "Helveticaneuecyr-medium";
 @font-roman: "Helveticaneuecyr-roman";
 @font-thin: "Helveticaneuecyr-thin";
-
 @font-face {
-	font-family: 'icomatrix';
-	src:url('../asset/icon-fonts/icomatrix.eot?7cvyol');
-	src:url('../asset/icon-fonts/icomatrix.eot?7cvyol#iefix') format('embedded-opentype'),
-		url('../asset/icon-fonts/icomatrix.ttf?7cvyol') format('truetype'),
-		url('../asset/icon-fonts/icomatrix.woff?7cvyol') format('woff'),
-		url('../asset/icon-fonts/icomatrix.svg?7cvyol#icomatrix') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'icomatrix';
+    src: url('../asset/icon-fonts/icomatrix.eot?7cvyol');
+    src: url('../asset/icon-fonts/icomatrix.eot?7cvyol#iefix') format('embedded-opentype'), url('../asset/icon-fonts/icomatrix.ttf?7cvyol') format('truetype'), url('../asset/icon-fonts/icomatrix.woff?7cvyol') format('woff'), url('../asset/icon-fonts/icomatrix.svg?7cvyol#icomatrix') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-[class^="matr-"], [class*=" matr-"] {
-	font-family: 'icomatrix' !important;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+[class^="matr-"],
+[class*=" matr-"] {
+    font-family: 'icomatrix' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .matr-custom-logo:before {
-	content: "\e900";
-	color: #fff;
-	font-size: 18px;
-	
-	@media @mobile {
-		font-size: 16px;
-	}
+    content: "\e900";
+    color: #fff;
+    font-size: 18px;
+    @media @mobile {
+        font-size: 16px;
+    }
 }
+
 .matr-chevron-down:after {
-	content: "\f078";
+    content: "\f078";
 }
+
 .matr-custom-search:before {
-	content: "\e901";
-	color: #fff;
-	font-size: 18px;
-	
-	@media @mobile { 
-		font-size: 26px;
-		font-weight: 600;
-	}
+    content: "\e901";
+    color: #fff;
+    font-size: 18px;
+    @media @mobile {
+        font-size: 26px;
+        font-weight: 600;
+    }
 }
+
 .matr-play-circle:before {
-	content: "\f144";
-	font-size: 150px;
-	opacity: 0.7;
-	
-	@media @mobile {
-		font-size: 100px;
-	}
+    content: "\f144";
+    font-size: 150px;
+    opacity: 0.7;
+    @media @mobile {
+        font-size: 100px;
+    }
 }
+
 .matr-custom-facebook:before {
-	content: "\e902";
-	color: @gray-t-footer;
+    content: "\e902";
+    color: @gray-t-footer;
 }
+
 .matr-custom-twitter:before {
-	content: "\e905";
-	color: @gray-t-footer;
+    content: "\e905";
+    color: @gray-t-footer;
 }
+
 .matr-custom-pinterest:before {
-	content: "\e904";
-	color: @gray-t-footer;
+    content: "\e904";
+    color: @gray-t-footer;
 }
+
 .matr-custom-youtube:before {
-	content: "\e906";
-	color: @gray-t-footer;
+    content: "\e906";
+    color: @gray-t-footer;
 }
+
 .matr-custom-instagram:before {
-	content: "\e903";
-	color: @gray-t-footer;
+    content: "\e903";
+    color: @gray-t-footer;
 }
+
 .matr-navicon:before {
-	content: "\f0c9";
-	font-size: 30px;
-	color: #fff;
+    content: "\f0c9";
+    font-size: 30px;
+    color: #fff;
 }
-@font-face 
-{
-    font-family: 'Helveticaneuecyr-black'; 
+
+@font-face {
+    font-family: 'Helveticaneuecyr-black';
     src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-black.eot');
-    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-black.eot?#iefix') format('embedded-opentype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-black.woff') format('woff'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-black.ttf') format('truetype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-black.svg#Helveticaneuecyr-black') format('svg');
+    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-black.eot?#iefix') format('embedded-opentype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-black.woff') format('woff'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-black.ttf') format('truetype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-black.svg#Helveticaneuecyr-black') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face 
-{
-    font-family: 'Helveticaneuecyr-bold'; 
+
+@font-face {
+    font-family: 'Helveticaneuecyr-bold';
     src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-bold.eot');
-    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-bold.eot?#iefix') format('embedded-opentype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-bold.woff') format('woff'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-bold.ttf') format('truetype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-bold.svg#Helveticaneuecyr-bold') format('svg');
+    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-bold.eot?#iefix') format('embedded-opentype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-bold.woff') format('woff'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-bold.ttf') format('truetype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-bold.svg#Helveticaneuecyr-bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face 
-{
-    font-family: 'Helveticaneuecyr-cond'; 
+
+@font-face {
+    font-family: 'Helveticaneuecyr-cond';
     src: url('../asset/asset/HelveticaNeue_rus/helveticaneuecyr-cond.eot');
-    src: url('../asset/asset/HelveticaNeue_rus/helveticaneuecyr-cond.eot?#iefix') format('embedded-opentype'),
-        url('../asset/asset/HelveticaNeue_rus/helveticaneuecyr-cond.woff') format('woff'),
-        url('../asset/asset/HelveticaNeue_rus/helveticaneuecyr-cond.ttf') format('truetype'),
-        url('../asset/asset/HelveticaNeue_rus/helveticaneuecyr-cond.svg#Helveticaneuecyr-cond') format('svg');
+    src: url('../asset/asset/HelveticaNeue_rus/helveticaneuecyr-cond.eot?#iefix') format('embedded-opentype'), url('../asset/asset/HelveticaNeue_rus/helveticaneuecyr-cond.woff') format('woff'), url('../asset/asset/HelveticaNeue_rus/helveticaneuecyr-cond.ttf') format('truetype'), url('../asset/asset/HelveticaNeue_rus/helveticaneuecyr-cond.svg#Helveticaneuecyr-cond') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face 
-{
-    font-family: 'Helveticaneuecyr-cond-medium'; 
+
+@font-face {
+    font-family: 'Helveticaneuecyr-cond-medium';
     src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-cond-medium.eot');
-    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-cond-medium.eot?#iefix') format('embedded-opentype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-cond-medium.woff') format('woff'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-cond-medium.ttf') format('truetype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-cond-medium.svg#Helveticaneuecyr-cond-medium') format('svg');
+    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-cond-medium.eot?#iefix') format('embedded-opentype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-cond-medium.woff') format('woff'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-cond-medium.ttf') format('truetype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-cond-medium.svg#Helveticaneuecyr-cond-medium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face 
-{
-    font-family: 'Helveticaneuecyr-italic'; 
+
+@font-face {
+    font-family: 'Helveticaneuecyr-italic';
     src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-italic.eot');
-    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-italic.eot?#iefix') format('embedded-opentype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-italic.woff') format('woff'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-italic.ttf') format('truetype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-italic.svg#Helveticaneuecyr-italic') format('svg');
+    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-italic.eot?#iefix') format('embedded-opentype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-italic.woff') format('woff'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-italic.ttf') format('truetype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-italic.svg#Helveticaneuecyr-italic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face 
-{
-    font-family: 'Helveticaneuecyr-light'; 
+
+@font-face {
+    font-family: 'Helveticaneuecyr-light';
     src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-light.eot');
-    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-light.eot?#iefix') format('embedded-opentype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-light.woff') format('woff'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-light.ttf') format('truetype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-light.svg#Helveticaneuecyr-light') format('svg');
+    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-light.eot?#iefix') format('embedded-opentype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-light.woff') format('woff'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-light.ttf') format('truetype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-light.svg#Helveticaneuecyr-light') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face 
-{
-    font-family: 'Helveticaneuecyr-medium'; 
+
+@font-face {
+    font-family: 'Helveticaneuecyr-medium';
     src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-medium.eot');
-    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-medium.eot?#iefix') format('embedded-opentype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-medium.woff') format('woff'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-medium.ttf') format('truetype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-medium.svg#Helveticaneuecyr-medium') format('svg');
+    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-medium.eot?#iefix') format('embedded-opentype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-medium.woff') format('woff'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-medium.ttf') format('truetype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-medium.svg#Helveticaneuecyr-medium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face 
-{
-    font-family: 'Helveticaneuecyr-roman'; 
+
+@font-face {
+    font-family: 'Helveticaneuecyr-roman';
     src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-roman.eot');
-    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-roman.eot?#iefix') format('embedded-opentype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-roman.woff') format('woff'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-roman.ttf') format('truetype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-roman.svg#Helveticaneuecyr-roman') format('svg');
+    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-roman.eot?#iefix') format('embedded-opentype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-roman.woff') format('woff'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-roman.ttf') format('truetype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-roman.svg#Helveticaneuecyr-roman') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face 
-{
-    font-family: 'Helveticaneuecyr-thin'; 
+
+@font-face {
+    font-family: 'Helveticaneuecyr-thin';
     src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-thin.eot');
-    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-thin.eot?#iefix') format('embedded-opentype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-thin.woff') format('woff'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-thin.ttf') format('truetype'),
-        url('../asset/HelveticaNeue_rus/helveticaneuecyr-thin.svg#Helveticaneuecyr-thin') format('svg');
+    src: url('../asset/HelveticaNeue_rus/helveticaneuecyr-thin.eot?#iefix') format('embedded-opentype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-thin.woff') format('woff'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-thin.ttf') format('truetype'), url('../asset/HelveticaNeue_rus/helveticaneuecyr-thin.svg#Helveticaneuecyr-thin') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     background-color: #fff;
     -js-display: flex;
     display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
 }
-html, body {
-	margin: 0px;
-  	padding: 0px;
- 	min-width: 355px;
-  	max-width: 100%;
-	font-size: 16px;
-	font-weight: 300;
-	color: #000;
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    min-width: 355px;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
 }
+
 a {
-  	outline: none;
-  	text-decoration: none;
-  	color: #000;
+    outline: none;
+    text-decoration: none;
+    color: #000;
 }
+
 .vis {
-	visibility: visible;
+    visibility: visible;
 }
+
 .unvis {
-	visibility: hidden;
+    visibility: hidden;
 }
+
 .clearfix:after {
-  	content: '';
-  	clear: both;
-  	display: table;
-	height: 0;
+    content: '';
+    clear: both;
+    display: table;
+    height: 0;
 }
+
 .unstyle {
-	list-style-type: none;
-	padding: 0px;
-	margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
+
 .list-inline li {
-	display: inline-block;
+    display: inline-block;
 }
+
 .marg-auto {
-  	margin-left: auto;
-  	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .mar-pad-0 {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
+
 .color-red {
-	color: @red;
+    color: @red;
 }
-h1, h2 {
-	text-transform: uppercase;
-}
+
+h1,
 h2 {
-	text-align: left !important;
+    text-transform: uppercase;
 }
 
 .content {
-	flex: 1;
+    flex: 1;
     height: auto !important;
     margin: 0px auto 60px;
     min-height: 100%;
     padding: 0px 0px 100px;
     box-sizing: border-box;
 }
+
 .breadcrumb {
-	color: @gray;
-	font-size: 12px;
-	font-family: @font-light;
-	text-transform: uppercase;
-	margin: 20px 0px 0px 50px;
-	&__link:after {
-		content: " / ";
-	}
-	&__active {
-		color: @red;
-		font-family: @font-roman;
-	}
-
-	@media @mobile {
-		font-size: 13px;
-		margin: 20px 0px 0px 10px;
-	}
+    color: @gray;
+    font-size: 12px;
+    font-family: @font-light;
+    text-transform: uppercase;
+    margin: 20px 0px 0px 50px;
+    &__link:after {
+        content: " / ";
+    }
+    &__active {
+        color: @red;
+        font-family: @font-roman;
+    }
+    @media @mobile {
+        font-size: 13px;
+        margin: 20px 0px 0px 10px;
+    }
 }
+
 .common-container {
-	max-width: 980px;
-	padding: 0px 10px;
-	
-	@media @tablet {
-		max-width: 700px;		
-	}
-
-	@media @tablet-mini {
-		max-width: 560px;		
-	}
-
-	@media @mobile {
-		box-sizing: border-box;
-		max-width: 400px;
-		margin: 0px 10px;
-		margin-left: auto;
-  		margin-right: auto;
-	}
+    max-width: 980px;
+    padding: 0px 10px;
+    @media @tablet {
+        max-width: 700px;
+    }
+    @media @tablet-mini {
+        max-width: 560px;
+    }
+    @media @mobile {
+        box-sizing: border-box;
+        max-width: 400px;
+        margin: 0px 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
 .front-video {
-	width: 100%;
-	position: relative;
-	&__header {
-		font-size: 61px; 
-	}
-	&__img {
-		cursor: pointer; 
-		height: 500px;
-		background: url("http://img.youtube.com/vi/-tztXOz8Vc0/maxresdefault.jpg") no-repeat 0 0;
-		background-size: cover;  //contain
-		&:hover .play-video {
-			opacity: 0.8;
-		}
-	}
-	&__description {
-		font-size: 30px;
-		line-height: 31px;
-		color: @gray-text;
-		font-family: @font-b;
-		letter-spacing: -2px;
-		&:after {
-			background: @gray-line;
-			content: "";
-			display: block;
-			height: 2px;
-			margin: 40px 0px;
-		}
-	}
-
-	@media @tablet {
-		&__img {
-			height: 400px;
-		}		
-	}
-
-	@media @tablet-mini {
-		&__header {
-			font-size: 56px; 
-		}
-		&__img {
-			height: 300px;
-		}		
-	}
-
-	@media @mobile {
-		width: auto;
-		&__img {
-			cursor: pointer; 
-			height: 175px;
-			background: url("http://img.youtube.com/vi/-tztXOz8Vc0/mqdefault.jpg") no-repeat 50% 50% ;
-			background-size: 100%
-		}
-		&__description {
-			font-size: 20px;
-			line-height: 25px;
-			letter-spacing: -1px;
-			&:after {
-				margin: 20px 0px;
-			}
-		}		
-	}
+    &__header {
+        font-size: 61px;
+        @media @tablet-mini {
+            font-size: 56px;
+        }
+    }
+    &__front-img {
+        width: 100% !important;
+    }
+    .play-circle {
+        left: 45%;
+        top: 40%;
+        @media @tablet-mini{
+        	left: 42%;
+        	top: 32%;
+        }
+        @media @mobile {
+        	left: 40%;
+        	top: 30%;
+        }
+    }
+    &__description {
+        font-size: 30px;
+        line-height: 31px;
+        color: @gray-text;
+        font-family: @font-b;
+        letter-spacing: -2px;
+        &:after {
+            background: @gray-line;
+            content: "";
+            display: block;
+            height: 2px;
+            margin: 40px 0px;
+        }
+        @media @mobile {
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: -1px;
+            &:after {
+                margin: 20px 0px;
+            }
+        }
+    }
 }
-.play-video {
-	box-sizing: border-box;
-	position: absolute;
-	left: 42%;
-	top: 32%;
-	
-	@media @tablet {
-		left: 40%;
-		top: 28%;		
-	}
 
-	@media @tablet-mini {
-		top: 25%;		
-	}
-	
-	@media @mobile {
-		left: 38%;
-		top: 22%;	
-	}
-}
-.steps-videos-mob, .education-videos-mob, .inspiration-videos-mob {
-	display: none;
-	
-	@media @mobile {
-		display: block; 		
-		text-align: center;
-	}
-}
-.videos-slider {
-	@media @mobile {
-		display: none !important;
-	}
-}
-.slider, .mob {	
-		.img-block {
-			box-sizing: border-box;
-			
-			@media @mobile {
-				margin-bottom: 50px;
-				visibility: hidden;
-				position: absolute;
-				&:nth-child(-n+3) {
-					position: static;
-					visibility: visible;
-				}
-			}			
-
-			& img:first-child {
-				position: relative;
-	   			width: 95%;
-	   			z-index: 1;
-	        }
-			.play-circle {
-				position: absolute;
-			 	z-index: 2;
-			 	left: 35%;
-			 	top: 25%;
-			}
-		}
-	}	
-
-.videos {
-	@media @tablet-mini {
-		width: 90%;
-		margin: 0 auto 20px;		
-	}
-
-	@media @mobile {
-    	width: 100%;		
-	}
-}	
-.videos__header {
-	margin-top: 60px;
-	font-size: 42px;
-}
-.front-video__header, .videos__header {
-	font-family: @font-m;
-	letter-spacing:-1px;
-	margin-bottom: 0px;
-	
-	@media @mobile {
-		font-size: 30px;
-		margin-bottom: 10px;
-		margin-left: 10px;		
-	}
-}
 .youtube-link {
-	display: block;
-	position: relative; 
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    & img:first-child {
+        position: relative;
+        width: 95%;
+        z-index: 1;
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    .play-circle {
+        position: absolute;
+        z-index: 2;
+    }
 }
-.load-more {
-	cursor: pointer; 
-	text-transform: uppercase;
-	background: #2A2A2A;
-	width: 120px;
-	color: #fff;
-	border: 0px;
-	padding: 10px;
-	letter-spacing:-1px;
-	font-weight: 400;
-	&:hover {
-		background: #3A3A3A;
+.video-block {
+	.play-circle {
+		left: 40%;
+        top: 30%;
 	}
+}
+.slider {
+    .youtube-link {
+        @media @mobile {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.video-block {
+    &__header {
+        margin-top: 60px;
+        font-size: 42px;
+    }
+    @media @tablet-mini {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+    @media @mobile {
+        width: 100%;
+    }
+    button {
+        display: none;
+        @media @mobile {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.front-video__header,
+.video-block__header {
+    font-family: @font-m;
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+    @media @mobile {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+}
+
+.load-more {
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #2A2A2A;
+    width: 120px;
+    color: #fff;
+    border: 0px;
+    padding: 10px;
+    letter-spacing: -1px;
+    font-weight: 400;
+    &:hover {
+        background: #3A3A3A;
+    }
 }
