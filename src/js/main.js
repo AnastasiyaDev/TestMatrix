@@ -1,23 +1,13 @@
 /*global $ _ videoList*/
 
-var tmpl = _.template($('#list-template').html());
+var tmpl = _.template($('#listTemplate').html());
 
 $('#videos').html(tmpl({ videos: videoList }));
-
-// $('.video-block__header').html($('.video-block__header').text().replace(/\s(\W+)\s/g, '<span class="color-red">$1</span>'));
-
-// var i = 0; 
-// alert('Step by Step'.replace(/\s/gi, function() {
-//     if (i === 1) return '<span class="color-red">';
-//     if (i === 2) return '</span>';
-// }));
 
 var $slider = $('.slider');
 var $searchForm = $('.search-form');
 var $allUnvisEl = $('.search-form > .unvis');
 var $linkOnYoutube = $('.youtube-link');
-var $youTubeLink = $('.youtube-link');
-var $playVideo = $('.play-circle');
 // var $moreStepsVideoButton = $('#more-steps-videos');
 // var $stepsVideoMob = $('.mob');
 
@@ -78,15 +68,6 @@ $linkOnYoutube.on('click', function(event) {
     return false;
 });
 
-$youTubeLink.hover(
-    function() {
-        $(this).find($playVideo).attr('src', 'img/playCircle-active.png');
-    },
-    function() {
-        $(this).find($playVideo).attr('src', 'img/playCircle.png');
-    }
-
-);
 
 // $moreStepsVideoButton.click(function() {
 //     $stepsVideoMob.find('.img-block:not(:visible):lt(2)').slideToggle('fast',

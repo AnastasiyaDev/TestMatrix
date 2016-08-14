@@ -5,7 +5,7 @@
   text-transform: uppercase;
 }
 .footer a:hover {
-  color: #959595;
+  color: #a6a6a6;
 }
 @media screen and (max-width: 600px) {
   .footer {
@@ -125,6 +125,7 @@
 .footer-social__link {
   font-size: 20px;
   padding: 0px 5px;
+  color: #737373;
 }
 @media screen and (max-width: 1040px) {
   .footer-social {

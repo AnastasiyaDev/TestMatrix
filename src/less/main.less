@@ -1,6 +1,8 @@
 @tablet: ~"screen and (max-width: 1040px)";
 @tablet-mini: ~"screen and (max-width: 767px)";
 @mobile: ~"screen and (max-width: 600px)";
+@mobile-mini: ~"screen and (max-width: 420px)";
+
 @red: #CD1D2C;
 @gray: #2A2A2A;
 @gray-text: #3d3d3d;
@@ -70,27 +72,22 @@
 
 .matr-custom-facebook:before {
     content: "\e902";
-    color: @gray-t-footer;
 }
 
 .matr-custom-twitter:before {
     content: "\e905";
-    color: @gray-t-footer;
 }
 
 .matr-custom-pinterest:before {
     content: "\e904";
-    color: @gray-t-footer;
 }
 
 .matr-custom-youtube:before {
     content: "\e906";
-    color: @gray-t-footer;
 }
 
 .matr-custom-instagram:before {
     content: "\e903";
-    color: @gray-t-footer;
 }
 
 .matr-navicon:before {
@@ -183,8 +180,8 @@ body {
 
 html,
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     min-width: 355px;
     max-width: 100%;
     font-size: 16px;
@@ -215,8 +212,8 @@ a {
 
 .unstyle {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .list-inline li {
@@ -229,8 +226,8 @@ a {
 }
 
 .mar-pad-0 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .color-red {
@@ -245,9 +242,9 @@ h2 {
 .content {
     flex: 1;
     height: auto !important;
-    margin: 0px auto 60px;
+    margin: 0 auto 60px;
     min-height: 100%;
-    padding: 0px 0px 100px;
+    padding: 0 0 100px;
     box-sizing: border-box;
 }
 
@@ -256,7 +253,7 @@ h2 {
     font-size: 12px;
     font-family: @font-light;
     text-transform: uppercase;
-    margin: 20px 0px 0px 50px;
+    margin: 20px 0 0 50px;
     &__link:after {
         content: " / ";
     }
@@ -266,13 +263,13 @@ h2 {
     }
     @media @mobile {
         font-size: 13px;
-        margin: 20px 0px 0px 10px;
+        margin: 20px 0 0 10px;
     }
 }
 
 .common-container {
     max-width: 980px;
-    padding: 0px 10px;
+    padding: 0 10px;
     @media @tablet {
         max-width: 700px;
     }
@@ -282,10 +279,13 @@ h2 {
     @media @mobile {
         box-sizing: border-box;
         max-width: 400px;
-        margin: 0px 10px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 10px;
     }
+    @media @mobile-mini {
+        max-width: 370px;
+        margin: 0;
+    }
+
 }
 
 .front-video {
@@ -298,7 +298,7 @@ h2 {
     &__front-img {
         width: 100% !important;
     }
-    .play-circle {
+    .youtube-link .play {
         left: 45%;
         top: 40%;
         @media @tablet-mini {
@@ -321,14 +321,14 @@ h2 {
             content: "";
             display: block;
             height: 2px;
-            margin: 40px 0px;
+            margin: 40px 0;
         }
         @media @mobile {
             font-size: 20px;
             line-height: 25px;
             letter-spacing: -1px;
             &:after {
-                margin: 20px 0px;
+                margin: 20px 0;
             }
         }
     }
@@ -338,24 +338,24 @@ h2 {
     display: block;
     position: relative;
     box-sizing: border-box;
-    & img:first-child {
-        position: relative;
+    position: relative; 
+    .play {
+        position: absolute;
+        top: 28%;
+        left: 38%;
+        &:after {
+            content: url('../img/playCircle.png');
+        }
+    }
+    &:hover .play:after {
+         content: url('../img/playCircle-active.png');
+    }
+    img {
         width: 95%;
         z-index: 1;
         @media @mobile {
             width: 100%;
-        }
-    }
-    .play-circle {
-        position: absolute;
-        z-index: 2;
-    }
-}
-// only for .video-block, don't merge
-.video-block {
-    .play-circle {
-        left: 40%;
-        top: 30%;
+        }      
     }
 }
 // only for .slider, don't merge
@@ -392,7 +392,7 @@ h2 {
 .video-block__header {
     font-family: @font-m;
     letter-spacing: -1px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     @media @mobile {
         font-size: 30px;
         margin-bottom: 10px;
@@ -406,7 +406,7 @@ h2 {
     background: #2A2A2A;
     width: 120px;
     color: #fff;
-    border: 0px;
+    border: 0;
     padding: 10px;
     letter-spacing: -1px;
     font-weight: 400;

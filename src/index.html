@@ -28,7 +28,7 @@
 			<div id="mob-menu" class="top-panel__mob matr-navicon matr-custom-search"></div>
 
 			<div class="top-panel__logo">
-				<a href=””>
+				<a href="">
 					<span class="matr-custom-logo marg-auto"></span> 
 				</a>
 			</div>
@@ -69,7 +69,7 @@
 	</div>
 	<!-- .header -->
 
-	<div class="content">
+	<div class="content mar-pad-0">
 		<ol class="breadcrumb unstyle list-inline">
 			<li><a class="breadcrumb__link" href="">Home</a></li>
     		<li class="breadcrumb__active">Videos</li>
@@ -82,7 +82,7 @@
 	  			<h1 class="front-video__header">Videos</h1>
 	  			<a class="youtube-link" href="https://www.youtube.com/watch?v=-tztXOz8Vc0?autoplay=1">
 	  				<img class="front-video__front-img" src="http://img.youtube.com/vi/-tztXOz8Vc0/maxresdefault.jpg" alt="">
-					<img class="play-circle" src="img/playCircle.png">
+	  				<div class="play"></div>
 		  		</a>
 	  			<p class="front-video__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis, nisl at ullamcorper egestas, felisadi piscing dolor, a interdum lorem urna quis magna.</p>
 	  		</div>
@@ -90,7 +90,7 @@
 
 	  		<div id="videos"></div>
 
-			<script type="text/template" id="list-template">
+			<script type="text/template" id="listTemplate">
 
 				<div class="video-block">
 					<% _(videos).forEach(function(video) { %>
@@ -99,7 +99,7 @@
 						<% _(video.list).forEach(function(id) { %>
 				  			<a class="youtube-link" href="https://www.youtube.com/watch?v=<%= id %>?autoplay=1">
 					  			<img src="http://img.youtube.com/vi/<%= id %>/mqdefault.jpg" alt="">
-					  			<img class="play-circle" src="img/playCircle.png">
+					  			<div class="play"></div>
 					  		</a>
 						<% }); %>
 					</div>
@@ -145,7 +145,6 @@
           src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
     
     <script src="js/all.js"></script>   	
-	<!-- <script src="js/main.js"></script> -->
 	
 
 </body>
