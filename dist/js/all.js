@@ -40,8 +40,6 @@ var $slider = $('.slider');
 var $searchForm = $('.search-form');
 var $allUnvisEl = $('.search-form > .unvis');
 var $linkOnYoutube = $('.youtube-link');
-// var $moreStepsVideoButton = $('#more-steps-videos');
-// var $stepsVideoMob = $('.mob');
 
 $slider.slick({
     dots: false,
@@ -63,7 +61,7 @@ $slider.slick({
             arrows: false,
             vertical: true,
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll: 0,
             infinite: false,
             dots: false
         }
@@ -100,14 +98,3 @@ $linkOnYoutube.on('click', function(event) {
     return false;
 });
 
-
-// $moreStepsVideoButton.click(function() {
-//     $stepsVideoMob.find('.img-block:not(:visible):lt(2)').slideToggle('fast',
-//         function() {
-//             // $imgBlock.css({'visibility':'visible', 'position':'static'});
-//             if ($stepsVideoMob.find('.img-block:not(:visible)').length == 0) {
-//                 $moreStepsVideoButton.css('display', 'none');
-//             }
-//         }
-//     );
-// });
